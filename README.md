@@ -9,14 +9,8 @@
 ## Local setup
 
 - make env file (see .env.example)
-- Perform the database migration.
+- run script from Makefile
 
 ```sh
-npx prisma migrate dev
-```
-
-- Run 
-
-```sh
-yarn dev
+make dev 
 ```
