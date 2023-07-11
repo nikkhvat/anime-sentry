@@ -7,14 +7,17 @@ import (
 	"fmt"
 	"log"
 	"regexp"
+	"time"
 
 	database "anime-bot-schedule/pkg/database"
 
+	"github.com/go-co-op/gocron"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"gorm.io/gorm"
 )
 
 func main() {
+
 	db := database.InitDB()
 
 	botToken := env.Get("TELEGRAM_BOT_TOKEN")
@@ -23,8 +26,22 @@ func main() {
 		log.Panic(err)
 	}
 
-	bot.Debug = true
+	bot.Debug = false
 
+	// * Launch a goroutine for regular status checks (every 30 minutes)
+	s := gocron.NewScheduler(time.UTC)
+
+	_, err = s.Every(30).Minute().Do(func() {
+		repositories.CheckAnimeStatus(db, bot)
+	})
+
+	if err != nil {
+		log.Fatalf("Could not schedule job: %v", err)
+	}
+
+	s.StartAsync()
+
+	// * Start a TG Bot
 	log.Printf("Authorized on account %s", bot.Self.UserName)
 
 	updateConfig := tgbotapi.NewUpdate(0)
