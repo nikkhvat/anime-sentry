@@ -38,7 +38,7 @@ func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 			var subscribers []models.Subscriber
 			db.Where("anime_id = ?", anime.ID).Find(&subscribers)
 			for _, subscriber := range subscribers {
-				text := fmt.Sprintf("%s \n\nВышла новая серия %s (%s)", *resp.Title, lastEpisod.Number, lastEpisod.Title)
+				text := fmt.Sprintf("%s \n\nВышла новая серия %s (%s)\n%s", *resp.Title, lastEpisod.Number, lastEpisod.Title, anime.URL)
 
 				if resp.Image != nil {
 					msg := tgbotapi.NewPhotoShare(subscriber.TelegramID, *resp.Image)
