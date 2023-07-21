@@ -95,6 +95,9 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update, reg
 
 		if err != nil {
 			log.Println(err)
+			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Произошла неизвестная ошибка :(")
+			_, _ = bot.Send(msg)
+			return
 		}
 
 		message := fmt.Sprintf("%s\n\nАниме сохраненно, вы будете получать уведомления когда выйдут новые серии. \n\n%s (%s) выйдет %s.",

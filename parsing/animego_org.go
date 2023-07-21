@@ -58,13 +58,16 @@ func AnimeGOFetch(url string) (*AnimeGoResp, error) {
 	})
 
 	image := document.Find("img").Eq(2)
-	src, _ := image.Attr("src")
+
+	srcset, _ := image.Attr("srcset")
+
+	srcsetArray := strings.Split(srcset, " ")
 
 	title, _ := image.Attr("title")
 
 	return &AnimeGoResp{
 		Episods: episods,
-		Image:   &src,
+		Image:   &srcsetArray[0],
 		Title:   &title,
 	}, nil
 }

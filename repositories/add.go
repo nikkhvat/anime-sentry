@@ -9,6 +9,7 @@ import (
 
 func AddSubscribeAnime(db *gorm.DB, telegramID int64, url, name, image, lastReleasedEpisode string) error {
 	var anime models.Anime
+
 	if err := db.Where("url = ?", url).First(&anime).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			anime = models.Anime{
