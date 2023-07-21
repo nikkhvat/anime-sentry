@@ -60,8 +60,18 @@ func main() {
 			continue
 		}
 
+		if update.Message.Text == "/start" {
+			go startBot(db, bot, update)
+			continue
+		}
+
 		go handleUpdate(db, bot, update, regexp)
 	}
+}
+
+func startBot(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
+	msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Добро пожаловать в бот Anime Schedule!\n\nВам нужно прислать ссылку на аниме с сайта animego.org и я буду уведомлять вас о выходе новых аниме")
+	_, _ = bot.Send(msg)
 }
 
 func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update, regexp *regexp.Regexp) {
