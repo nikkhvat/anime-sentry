@@ -26,11 +26,11 @@ func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 
 		var lastEpisod parsing.Episod
 
-		if !resp.Episods[0].Relized && resp.Episods[1].Relized {
+		if resp.Episods[0].Relized {
 			lastEpisod = resp.Episods[0]
-		} else if !resp.Episods[1].Relized && resp.Episods[2].Relized {
+		} else if resp.Episods[1].Relized {
 			lastEpisod = resp.Episods[1]
-		} else {
+		} else if resp.Episods[2].Relized {
 			lastEpisod = resp.Episods[2]
 		}
 
@@ -38,7 +38,7 @@ func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 			var subscribers []models.Subscriber
 			db.Where("anime_id = ?", anime.ID).Find(&subscribers)
 			for _, subscriber := range subscribers {
-				text := fmt.Sprintf("%s \n\nВышла новая серия %s (%s)\n%s", *resp.Title, lastEpisod.Number, lastEpisod.Title, anime.URL)
+				text := fmt.Sprintf("%s \n\nВышла новая серия на телеэкранах японии %s (%s)\n%s", *resp.Title, lastEpisod.Number, lastEpisod.Title, anime.URL)
 
 				if resp.Image != nil {
 					msg := tgbotapi.NewPhotoShare(subscriber.TelegramID, *resp.Image)
