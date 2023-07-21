@@ -42,7 +42,7 @@ func main() {
 	s.StartAsync()
 
 	// * Start a TG Bot
-	log.Printf("Authorized on account %s", bot.Self.UserName)
+	log.Printf("authorized on account %s", bot.Self.UserName)
 
 	updateConfig := tgbotapi.NewUpdate(0)
 	updateConfig.Timeout = 60

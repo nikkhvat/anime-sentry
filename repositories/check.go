@@ -13,14 +13,14 @@ import (
 func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 	var animes []models.Anime
 	if err := db.Find(&animes).Error; err != nil {
-		log.Printf("Error retrieving anime from DB: %s", err)
+		log.Printf("error retrieving anime from DB: %s", err)
 		return
 	}
 
 	for _, anime := range animes {
 		resp, err := parsing.AnimeGOFetch(anime.URL)
 		if err != nil {
-			log.Printf("Error fetching anime data: %s", err)
+			log.Printf("error fetching anime data: %s", err)
 			continue
 		}
 
