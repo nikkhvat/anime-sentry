@@ -35,11 +35,11 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 
 	var lastEpisod parsing.Episod
 
-	if !data.Episods[0].Relized && data.Episods[1].Relized {
+	if data.Episods[0].Relized {
 		lastEpisod = data.Episods[0]
-	} else if !data.Episods[1].Relized && data.Episods[2].Relized {
+	} else if data.Episods[1].Relized {
 		lastEpisod = data.Episods[1]
-	} else {
+	} else if data.Episods[2].Relized {
 		lastEpisod = data.Episods[2]
 	}
 
