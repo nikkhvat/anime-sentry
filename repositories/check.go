@@ -2,7 +2,7 @@ package repositories
 
 import (
 	"anime-bot-schedule/models"
-	"anime-bot-schedule/parsing"
+	parsing "anime-bot-schedule/parsing/animego.org"
 	"fmt"
 	"log"
 
