@@ -1,10 +1,11 @@
 package repositories
 
 import (
+	amediaonlinecheck "anime-bot-schedule/checker/amedia.online"
+	animegoorgcheck "anime-bot-schedule/checker/animego.org"
 	"anime-bot-schedule/models"
-	parsing "anime-bot-schedule/parsing/animego.org"
-	"fmt"
 	"log"
+	"regexp"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"gorm.io/gorm"
@@ -18,39 +19,18 @@ func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 	}
 
 	for _, anime := range animes {
-		resp, err := parsing.AnimeGOFetch(anime.URL)
-		if err != nil {
-			log.Printf("error fetching anime data: %s", err)
-			continue
+
+		animeGOregexp, _ := regexp.Compile(`^https://animego.org/anime/.*$`)
+		amediaOnline, _ := regexp.Compile(`^https://amedia.online/.*$`)
+
+		if animeGOregexp.MatchString(anime.URL) {
+			// If animego.org
+			animegoorgcheck.Check(db, bot, anime)
+
+		} else if amediaOnline.MatchString(anime.URL) {
+			// If amedia.online
+			amediaonlinecheck.Check(db, bot, anime)
 		}
 
-		var lastEpisod parsing.Episod
-
-		if resp.Episods[0].Relized {
-			lastEpisod = resp.Episods[0]
-		} else if resp.Episods[1].Relized {
-			lastEpisod = resp.Episods[1]
-		} else if resp.Episods[2].Relized {
-			lastEpisod = resp.Episods[2]
-		}
-
-		if lastEpisod.Number != anime.LastReleasedEpisode {
-			var subscribers []models.Subscriber
-			db.Where("anime_id = ?", anime.ID).Find(&subscribers)
-			for _, subscriber := range subscribers {
-				text := fmt.Sprintf("%s \n\nВышла новая серия на телеэкранах японии %s (%s)\n%s", *resp.Title, lastEpisod.Number, lastEpisod.Title, anime.URL)
-
-				if resp.Image != nil {
-					msg := tgbotapi.NewPhotoShare(subscriber.TelegramID, *resp.Image)
-					msg.Caption = text
-					_, _ = bot.Send(msg)
-				} else {
-					msg := tgbotapi.NewMessage(subscriber.TelegramID, text)
-					_, _ = bot.Send(msg)
-				}
-			}
-			anime.LastReleasedEpisode = lastEpisod.Number
-			db.Save(&anime)
-		}
 	}
 }
