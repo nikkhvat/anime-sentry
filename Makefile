@@ -11,5 +11,14 @@ start:
 start_with_out_backgroud:
 	docker-compose up --build
 
+stop_anime_schedule_bot:
+	docker-compose stop anime_schedule_bot
+	docker-compose rm -f anime_schedule_bot
+
+stop_db:
+	docker-compose stop db
+	docker-compose rm -f db
+
 stop:
-	docker compose down
+	make stop_anime_schedule_bot
+	make stop_db
