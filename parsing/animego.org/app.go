@@ -1,4 +1,4 @@
-package parsing
+package animegoorgparsing
 
 import (
 	"net/http"
@@ -20,7 +20,7 @@ type AnimeGoResp struct {
 	Title   *string
 }
 
-func AnimeGOFetch(url string) (*AnimeGoResp, error) {
+func Fetch(url string) (*AnimeGoResp, error) {
 	client := &http.Client{}
 
 	req, err := http.NewRequest("GET", url, nil)

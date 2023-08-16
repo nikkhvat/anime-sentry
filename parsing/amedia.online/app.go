@@ -1,4 +1,4 @@
-package parsing
+package amediaonlineparsing
 
 import (
 	"log"
@@ -18,7 +18,7 @@ type AnimeGoResp struct {
 	Title           string
 }
 
-func AnimediaFetch(url string) (*AnimeGoResp, error) {
+func Fetch(url string) (*AnimeGoResp, error) {
 	client := &http.Client{}
 
 	req, err := http.NewRequest("GET", url, nil)

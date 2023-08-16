@@ -11,7 +11,7 @@ import (
 )
 
 func Check(db *gorm.DB, bot *tgbotapi.BotAPI, anime models.Anime) {
-	resp, err := parsing.AnimeGOFetch(anime.URL)
+	resp, err := parsing.Fetch(anime.URL)
 	if err != nil {
 		log.Printf("error fetching anime data: %s", err)
 		return

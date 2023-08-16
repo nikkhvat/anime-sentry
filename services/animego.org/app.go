@@ -14,7 +14,7 @@ import (
 var LINK_PATTERN = `^https://animego.org/anime/.*$`
 
 func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
-	data, err := parsing.AnimeGOFetch(update.Message.Text)
+	data, err := parsing.Fetch(update.Message.Text)
 
 	if err != nil {
 		msg := message.NewMessage{
