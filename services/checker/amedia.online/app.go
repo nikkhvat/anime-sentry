@@ -1,8 +1,8 @@
-package fouranimeis
+package animegoorgcheck
 
 import (
 	"anime-bot-schedule/models"
-	parsing "anime-bot-schedule/parsing/4anime.is"
+	parsing "anime-bot-schedule/services/parser/amedia.online"
 	"fmt"
 	"log"
 
@@ -17,11 +17,11 @@ func Check(db *gorm.DB, bot *tgbotapi.BotAPI, anime models.Anime) {
 		return
 	}
 
-	if resp.LastEpisode != anime.LastReleasedEpisode {
+	if resp.AddedEpisode != anime.LastReleasedEpisode {
 		var subscribers []models.Subscriber
 		db.Where("anime_id = ?", anime.ID).Find(&subscribers)
 		for _, subscriber := range subscribers {
-			text := fmt.Sprintf("%s \n\nA new series has been released %s \n%s", resp.Title, resp.LastEpisode, resp.LastEpisodeLink)
+			text := fmt.Sprintf("%s \n\nВышла новая серия на телеэкранах японии %s \n%s", resp.Title, resp.AddedEpisode, anime.URL)
 
 			if resp.Poster != "" {
 				msg := tgbotapi.NewPhotoShare(subscriber.TelegramID, resp.Poster)
@@ -32,7 +32,7 @@ func Check(db *gorm.DB, bot *tgbotapi.BotAPI, anime models.Anime) {
 				_, _ = bot.Send(msg)
 			}
 		}
-		anime.LastReleasedEpisode = resp.LastEpisode
+		anime.LastReleasedEpisode = resp.AddedEpisode
 		db.Save(&anime)
 	}
 }

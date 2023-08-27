@@ -1,17 +1,16 @@
-package fouranimeis
+package amediaonline
 
 import (
 	"anime-bot-schedule/pkg/message"
 	"anime-bot-schedule/repositories"
+	parsing "anime-bot-schedule/services/parser/amedia.online"
 	"fmt"
-
-	parsing "anime-bot-schedule/parsing/4anime.is"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"gorm.io/gorm"
 )
 
-var LINK_PATTERN = `^https://4anime.is/.*$`
+var LINK_PATTERN = `^https://amedia.online/.*$`
 
 func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 	data, err := parsing.Fetch(update.Message.Text)
@@ -34,7 +33,7 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 	}
 
 	err = repositories.AddSubscribeAnime(db, update.Message.Chat.ID, update.Message.Text,
-		data.Title, *&data.Poster, data.LastEpisode)
+		data.Title, *&data.Poster, data.AddedEpisode)
 
 	if err != nil {
 		if err.Error() == "you are already subscribed to this anime" {
@@ -51,8 +50,8 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 		return msg
 	}
 
-	messageText := fmt.Sprintf("%s\n\nanime is saved, you will receive notifications about new episodes",
-		data.Title)
+	messageText := fmt.Sprintf("%s\n\nАниме сохраненно, вы будете получать уведомления когда выйдут новые серии. \n\n%s выйдет %s.",
+		data.Title, data.NextEpisode, data.NextEpisodeDate)
 
 	newMsg := message.NewMessage{
 		Text: messageText,

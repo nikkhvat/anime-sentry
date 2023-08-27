@@ -1,7 +1,7 @@
-package main
+package parser
 
 import (
-	animegoorgparsing "anime-bot-schedule/parsing/animevost.org"
+	animegoorgparsing "anime-bot-schedule/services/parser/animevost.org"
 	"log"
 )
 

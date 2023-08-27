@@ -2,7 +2,7 @@ package animevostorgcheck
 
 import (
 	"anime-bot-schedule/models"
-	parsing "anime-bot-schedule/parsing/animevost.org"
+	parsing "anime-bot-schedule/services/parser/animevost.org"
 	"fmt"
 	"log"
 

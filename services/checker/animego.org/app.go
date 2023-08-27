@@ -2,7 +2,7 @@ package animegoorgcheck
 
 import (
 	"anime-bot-schedule/models"
-	parsing "anime-bot-schedule/parsing/animego.org"
+	parsing "anime-bot-schedule/services/parser/animego.org"
 	"fmt"
 	"log"
 

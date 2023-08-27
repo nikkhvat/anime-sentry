@@ -1,11 +1,11 @@
 package repositories
 
 import (
-	fouranimeischeck "anime-bot-schedule/checker/4anime.is"
-	amediaonlinecheck "anime-bot-schedule/checker/amedia.online"
-	animegoorgcheck "anime-bot-schedule/checker/animego.org"
-	animevostorgcheck "anime-bot-schedule/checker/animevost.org"
 	"anime-bot-schedule/models"
+	fouranimeischeck "anime-bot-schedule/services/checker/4anime.is"
+	amediaonlinecheck "anime-bot-schedule/services/checker/amedia.online"
+	animegoorgcheck "anime-bot-schedule/services/checker/animego.org"
+	animevostorgcheck "anime-bot-schedule/services/checker/animevost.org"
 	"log"
 	"regexp"
 

@@ -1,16 +1,17 @@
-package amediaonline
+package animevostorg
 
 import (
-	parsing "anime-bot-schedule/parsing/amedia.online"
 	"anime-bot-schedule/pkg/message"
 	"anime-bot-schedule/repositories"
 	"fmt"
+
+	parsing "anime-bot-schedule/services/parser/animevost.org"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"gorm.io/gorm"
 )
 
-var LINK_PATTERN = `^https://amedia.online/.*$`
+var LINK_PATTERN = `^https://animevost.org/tip/tv/.*$`
 
 func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 	data, err := parsing.Fetch(update.Message.Text)

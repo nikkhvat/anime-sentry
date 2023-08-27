@@ -14,10 +14,10 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"gorm.io/gorm"
 
-	fouranimeis "anime-bot-schedule/services/4anime.is"
-	amediaonline "anime-bot-schedule/services/amedia.online"
-	animegoorg "anime-bot-schedule/services/animego.org"
-	animevostorg "anime-bot-schedule/services/animevost.org"
+	fouranimeis "anime-bot-schedule/services/service/4anime.is"
+	amediaonline "anime-bot-schedule/services/service/amedia.online"
+	animegoorg "anime-bot-schedule/services/service/animego.org"
+	animevostorg "anime-bot-schedule/services/service/animevost.org"
 )
 
 func main() {

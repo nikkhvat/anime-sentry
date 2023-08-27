@@ -2,14 +2,14 @@ package animegoorgparsing
 
 import (
 	"fmt"
-	"net/http"
+	"log"
 	"strconv"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
-type AnimeVostResponse struct {
+type IData struct {
 	AddedEpisode    string
 	NextEpisode     string
 	NextEpisodeDate string
@@ -17,31 +17,17 @@ type AnimeVostResponse struct {
 	Title           string
 }
 
-func Fetch(url string) (*AnimeVostResponse, error) {
-	client := &http.Client{}
+func getDataFromHtml(html string) (*IData, error) {
+	document, err := goquery.NewDocumentFromReader(strings.NewReader(html))
 
-	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
 	}
 
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
+	var data IData
 
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-
-	document, err := goquery.NewDocumentFromReader(resp.Body)
-	if err != nil {
-		return nil, err
-	}
-
-	var result AnimeVostResponse
-
-	result.Title, _ = document.Find("div[style*='width: 240px;'] img").Attr("title")
-	result.Poster, _ = document.Find("meta[property='og:image']").Attr("content")
+	data.Title, _ = document.Find("div[style*='width: 240px;'] img").Attr("title")
+	data.Poster, _ = document.Find("meta[property='og:image']").Attr("content")
 	episodeInfo := document.Find("div.shortstoryHead h1").Text()
 
 	bracketsInfo := strings.Split(episodeInfo, "] [")
@@ -57,24 +43,26 @@ func Fetch(url string) (*AnimeVostResponse, error) {
 			if len(episodeRange) == 3 {
 				addedEpisode, _ := strconv.Atoi(episodeRange[2])
 
-				result.AddedEpisode = strconv.Itoa(addedEpisode)
+				data.AddedEpisode = strconv.Itoa(addedEpisode)
 			}
 		}
 
 		parts = strings.Split(secondBracketContent, " серия - ")
 		if len(parts) == 2 {
-			result.NextEpisode = parts[0]
+			data.NextEpisode = parts[0]
 
 			date := strings.Split(parts[1], "]")
-			result.NextEpisodeDate = date[0]
+			data.NextEpisodeDate = date[0]
 		}
 	} else {
 		fmt.Println("Could not extract episode info.")
 	}
 
-	result.AddedEpisode = result.AddedEpisode + " серия"
-	result.NextEpisode = result.NextEpisode + " серия"
-	result.Poster = "https://animevost.org" + result.Poster
+	data.AddedEpisode = data.AddedEpisode + " серия"
+	data.NextEpisode = data.NextEpisode + " серия"
+	data.Poster = "https://animevost.org" + data.Poster
 
-	return &result, nil
+	log.Println(data)
+
+	return &data, nil
 }

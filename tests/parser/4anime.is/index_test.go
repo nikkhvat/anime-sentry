@@ -1,11 +1,11 @@
-package main
+package parser
 
 import (
-	fouranimeisparsing "anime-bot-schedule/parsing/4anime.is"
+	fouranimeisparsing "anime-bot-schedule/services/parser/4anime.is"
 	"log"
 )
 
-func main() {
+func TestParser4animeIs() {
 	data, err := fouranimeisparsing.Fetch("https://4anime.is/watch/masamunekuns-revenge-r-18419?ep=104316")
 
 	if data != nil {
