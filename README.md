@@ -2,21 +2,24 @@
 
 ## Operation principle
 
-- You send the bot a link to an anime (mandatory from the animego.org website).
-- The bot mentions the release time of the episode (in Japan).
-- The bot checks every hour, according to the cron schedule, if a new episode of the anime has been released (with voice acting or subtitles).
+- You send the bot a link to an anime.
+- The bot mentions the release time of the episode.
+- The bot checks every half hour, according to the cron schedule, whether a new anime episode has been released (with voice acting or subtitles).
 
-### Supported websites
+## Supported websites
 
-#### English-language sites
+### English-language sites
 
 - [4anime.is](https://4anime.is/)
 
-#### Russian-language sites
+### Russian-language sites
 
 - [animego.org](https://animego.org/)
 - [amedia.online](https://amedia.online/)
 - [animevost.org](https://animevost.org/)
+
+
+![prewiew image](./prewiew.png)
 
 ## Local setup
 
