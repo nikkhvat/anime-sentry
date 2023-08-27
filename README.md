@@ -6,7 +6,13 @@
 - The bot mentions the release time of the episode (in Japan).
 - The bot checks every hour, according to the cron schedule, if a new episode of the anime has been released (with voice acting or subtitles).
 
-### Supported sites
+### Supported websites
+
+#### English-language sites
+
+- [4anime.is](https://4anime.is/)
+
+#### Russian-language sites
 
 - [animego.org](https://animego.org/)
 - [amedia.online](https://amedia.online/)

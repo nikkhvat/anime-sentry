@@ -14,6 +14,7 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"gorm.io/gorm"
 
+	fouranimeis "anime-bot-schedule/services/4anime.is"
 	amediaonline "anime-bot-schedule/services/amedia.online"
 	animegoorg "anime-bot-schedule/services/animego.org"
 	animevostorg "anime-bot-schedule/services/animevost.org"
@@ -87,6 +88,7 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	animeGOregexp, _ := regexp.Compile(animegoorg.LINK_PATTERN)
 	amediaOnline, _ := regexp.Compile(amediaonline.LINK_PATTERN)
 	animevostOrg, _ := regexp.Compile(animevostorg.LINK_PATTERN)
+	fouranimeIs, _ := regexp.Compile(fouranimeis.LINK_PATTERN)
 	if animeGOregexp.MatchString(update.Message.Text) {
 		msg := animegoorg.Handle(db, update)
 		msg.UserId = update.Message.Chat.ID
@@ -99,6 +101,10 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 
 	} else if animevostOrg.MatchString(update.Message.Text) {
 		msg := animevostorg.Handle(db, update)
+		msg.UserId = update.Message.Chat.ID
+		msg.Send(bot)
+	} else if fouranimeIs.MatchString(update.Message.Text) {
+		msg := fouranimeis.Handle(db, update)
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
 	} else {

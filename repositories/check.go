@@ -1,6 +1,7 @@
 package repositories
 
 import (
+	fouranimeischeck "anime-bot-schedule/checker/4anime.is"
 	amediaonlinecheck "anime-bot-schedule/checker/amedia.online"
 	animegoorgcheck "anime-bot-schedule/checker/animego.org"
 	animevostorgcheck "anime-bot-schedule/checker/animevost.org"
@@ -24,6 +25,7 @@ func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 		animeGOregexp, _ := regexp.Compile(`^https://animego.org/anime/.*$`)
 		amediaOnline, _ := regexp.Compile(`^https://amedia.online/.*$`)
 		animevostOrg, _ := regexp.Compile(`^https://animevost.org/tip/tv/.*$`)
+		fouranimeIs, _ := regexp.Compile(`^https://4anime.is/.*$`)
 
 		if animeGOregexp.MatchString(anime.URL) {
 			animegoorgcheck.Check(db, bot, anime)
@@ -31,6 +33,8 @@ func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 			amediaonlinecheck.Check(db, bot, anime)
 		} else if animevostOrg.MatchString(anime.URL) {
 			animevostorgcheck.Check(db, bot, anime)
+		} else if fouranimeIs.MatchString(anime.URL) {
+			fouranimeischeck.Check(db, bot, anime)
 		}
 	}
 }
