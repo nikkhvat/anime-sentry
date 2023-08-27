@@ -3,6 +3,7 @@ package repositories
 import (
 	amediaonlinecheck "anime-bot-schedule/checker/amedia.online"
 	animegoorgcheck "anime-bot-schedule/checker/animego.org"
+	animevostorgcheck "anime-bot-schedule/checker/animevost.org"
 	"anime-bot-schedule/models"
 	"log"
 	"regexp"
@@ -22,15 +23,14 @@ func CheckAnimeStatus(db *gorm.DB, bot *tgbotapi.BotAPI) {
 
 		animeGOregexp, _ := regexp.Compile(`^https://animego.org/anime/.*$`)
 		amediaOnline, _ := regexp.Compile(`^https://amedia.online/.*$`)
+		animevostOrg, _ := regexp.Compile(`^https://animevost.org/tip/tv/.*$`)
 
 		if animeGOregexp.MatchString(anime.URL) {
-			// If animego.org
 			animegoorgcheck.Check(db, bot, anime)
-
 		} else if amediaOnline.MatchString(anime.URL) {
-			// If amedia.online
 			amediaonlinecheck.Check(db, bot, anime)
+		} else if animevostOrg.MatchString(anime.URL) {
+			animevostorgcheck.Check(db, bot, anime)
 		}
-
 	}
 }

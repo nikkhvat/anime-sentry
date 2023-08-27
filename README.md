@@ -8,8 +8,9 @@
 
 ### Supported sites
 
-- animego.org
-- amedia.online
+- [animego.org](https://animego.org/)
+- [amedia.online](https://amedia.online/)
+- [animevost.org](https://animevost.org/)
 
 ## Local setup
 

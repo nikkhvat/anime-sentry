@@ -16,6 +16,7 @@ import (
 
 	amediaonline "anime-bot-schedule/services/amedia.online"
 	animegoorg "anime-bot-schedule/services/animego.org"
+	animevostorg "anime-bot-schedule/services/animevost.org"
 )
 
 func main() {
@@ -85,6 +86,7 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 
 	animeGOregexp, _ := regexp.Compile(animegoorg.LINK_PATTERN)
 	amediaOnline, _ := regexp.Compile(amediaonline.LINK_PATTERN)
+	animevostOrg, _ := regexp.Compile(animevostorg.LINK_PATTERN)
 	if animeGOregexp.MatchString(update.Message.Text) {
 		msg := animegoorg.Handle(db, update)
 		msg.UserId = update.Message.Chat.ID
@@ -95,10 +97,14 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
 
+	} else if animevostOrg.MatchString(update.Message.Text) {
+		msg := animevostorg.Handle(db, update)
+		msg.UserId = update.Message.Chat.ID
+		msg.Send(bot)
 	} else {
 		msg := message.NewMessage{
 			UserId: update.Message.Chat.ID,
-			Text:   "Не похоже что это ссылка на аниме.\nМы поддерживаем сервисы:\n\n- https://animego.org\n- https://amedia.online",
+			Text:   "Не похоже что это ссылка на аниме.\nМы поддерживаем сервисы:\n\n- animego.org\n- amedia.online\n- animevost.org",
 		}
 
 		msg.Send(bot)
