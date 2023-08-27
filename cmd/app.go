@@ -110,7 +110,7 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	} else {
 		msg := message.NewMessage{
 			UserId: update.Message.Chat.ID,
-			Text:   "Не похоже что это ссылка на аниме.\nМы поддерживаем сервисы:\n\n- animego.org\n- amedia.online\n- animevost.org",
+			Text:   "Не похоже что это ссылка на аниме.\nМы поддерживаем сервисы:\n\n- animego.org\n- amedia.online\n- animevost.org\n- 4anime.is",
 		}
 
 		msg.Send(bot)
