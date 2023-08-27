@@ -76,7 +76,7 @@ func main() {
 func startBot(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	msg := message.NewMessage{
 		UserId: update.Message.Chat.ID,
-		Text:   "Добро пожаловать в бот Anime Schedule!\n\nВам нужно прислать ссылку на аниме и я буду уведомлять вас о выходе новых аниме\n\nСайты которые поддерживаются на данный момент:\n - animego.org\n - amedia.online",
+		Text:   "Добро пожаловать в бот Anime Schedule!\n\nВам нужно прислать ссылку на аниме и я буду уведомлять вас о выходе новых аниме\n\nСайты которые поддерживаются на данный момент:\n- animego.org\n- amedia.online\n- animevost.org\n- 4anime.is",
 	}
 
 	msg.Send(bot)
