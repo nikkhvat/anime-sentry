@@ -19,7 +19,7 @@
 - [animevost.org](https://animevost.org/)
 
 
-![prewiew image](./prewiew.png)
+![prewiew image](./prewiew.jpg)
 
 ## Local setup
 
