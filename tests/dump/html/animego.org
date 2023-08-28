@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Реинкарнация безработного: История о приключениях в другом мире (ТВ Сериал, 2 сезон) смотреть онлайн — Аниме
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff5c57" />
+  <meta name="apple-mobile-web-app-title" content="AnimeGO" />
+  <meta name="application-name" content="AnimeGO" />
+  <meta name="msapplication-TileColor" content="#ff5c57" />
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:url"
+    content="https://animego.org/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-2333" />
+  <script>var require = { 'baseUrl': '/animego/js' };</script>
+  <link href="https://animego.org/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-2333"
+    rel="canonical" />
+  <meta name="description"
+    content="Смотреть онлайн аниме Реинкарнация безработного: История о приключениях в другом мире (2 сезон) — Второй сезон." />
+  <meta name="keywords"
+    content="аниме Реинкарнация безработного: История о приключениях в другом мире 2 сезон смотреть онлайн" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:title"
+    content="Реинкарнация безработного: История о приключениях в другом мире (ТВ Сериал, 2 сезон) смотреть онлайн — Аниме" />
+  <meta property="og:description"
+    content="Смотреть онлайн аниме Реинкарнация безработного: История о приключениях в другом мире (2 сезон) — Второй сезон." />
+  <link rel="image_src"
+    href="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/64d4b199e9863172700580.jpg" />
+  <meta property="og:image"
+    content="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/64d4b199e9863172700580.jpg" />
+  <meta property="og:image:width" content="250" />
+  <meta property="og:image:height" content="350" />
+  <script
+    type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"TVSeries","url":"\/anime\/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-2333","name":"\u0420\u0435\u0438\u043d\u043a\u0430\u0440\u043d\u0430\u0446\u0438\u044f \u0431\u0435\u0437\u0440\u0430\u0431\u043e\u0442\u043d\u043e\u0433\u043e: \u0418\u0441\u0442\u043e\u0440\u0438\u044f \u043e \u043f\u0440\u0438\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f\u0445 \u0432 \u0434\u0440\u0443\u0433\u043e\u043c \u043c\u0438\u0440\u0435 2","contentRating":"NC-17","description":"\u0412\u0442\u043e\u0440\u043e\u0439 \u0441\u0435\u0437\u043e\u043d.","aggregateRating":{"@type":"AggregateRating","ratingCount":8585,"bestRating":10,"ratingValue":"9.5"},"numberOfEpisodes":12,"startDate":"2023-07-10","image":"\/upload\/anime\/images\/64d4b199e9863172700580.jpg","genre":["\u0414\u0440\u0430\u043c\u0430","\u0424\u044d\u043d\u0442\u0435\u0437\u0438","\u042d\u0442\u0442\u0438"],"alternativeHeadline":["Mushoku Tensei II: Isekai Ittara Honki Dasu","Mushoku Tensei: Jobless Reincarnation Season 2","\u7121\u8077\u8ee2\u751f II \uff5e\u7570\u4e16\u754c\u884c\u3063\u305f\u3089\u672c\u6c17\u3060\u3059\uff5e"],"actor":[{"@type":"Person","url":"\/person\/530-yumi-uchiyama","name":"\u042e\u043c\u0438 \u0423\u0442\u0438\u044f\u043c\u0430"},{"@type":"Person","url":"\/person\/117-tomokazu-sugita","name":"\u0422\u043e\u043c\u043e\u043a\u0430\u0434\u0437\u0443 \u0421\u0443\u0433\u0438\u0442\u0430"},{"@type":"Person","url":"\/person\/299-ai-kayano","name":"\u0410\u0438 \u041a\u0430\u044f\u043d\u043e"}],"creator":[{"@type":"Organization","url":"\/anime\/studio\/studio-bind","name":"Studio Bind"}]}</script>
+  <meta property="og:site_name" content="AnimeGO" />
+  <script>var devicejs = { isMobile: false, isTablet: false };</script>
+  <script>var baseOptions = { url: 'https://animego.org/', 'IS_AUTHENTICATED_FULLY': false };</script>
+  <script>function ready(e) { (document.attachEvent ? "complete" === document.readyState : "loading" !== document.readyState) ? e() : document.addEventListener("DOMContentLoaded", e) }</script>
+  <script src="/animego/js/require.min.js?v=2.3.6" defer></script>
+  <script src="/animego/js/main.min.js?v=67" defer></script>
+  <link href="/animego/css/common.min.css?v=19" rel="stylesheet" type="text/css" />
+  <style data-css="tiny-slider.min.css">
+    .tns-outer {
+      padding: 0 !important
+    }
+
+    .tns-outer [hidden] {
+      display: none !important
+    }
+
+    .tns-outer [aria-controls],
+    .tns-outer [data-action] {
+      cursor: pointer
+    }
+
+    .tns-slider {
+      -webkit-transition: all 0s;
+      -moz-transition: all 0s;
+      transition: all 0s
+    }
+
+    .tns-slider>div,
+    .tns-slider>li {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    .tns-horizontal.tns-subpixel {
+      white-space: nowrap
+    }
+
+    .tns-horizontal.tns-subpixel>div,
+    .tns-horizontal.tns-subpixel>li {
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal
+    }
+
+    .tns-horizontal.tns-no-subpixel:after {
+      content: '';
+      display: table;
+      clear: both
+    }
+
+    .tns-horizontal.tns-no-subpixel>div,
+    .tns-horizontal.tns-no-subpixel>li {
+      float: left;
+      margin-right: -100%
+    }
+
+    .tns-no-calc {
+      position: relative;
+      left: 0
+    }
+
+    .tns-gallery {
+      position: relative;
+      left: 0;
+      min-height: 1px
+    }
+
+    .tns-gallery>div,
+    .tns-gallery>li {
+      position: absolute;
+      left: -100%;
+      -webkit-transition: transform 0s, opacity 0s;
+      -moz-transition: transform 0s, opacity 0s;
+      transition: transform 0s, opacity 0s
+    }
+
+    .tns-gallery>.tns-moving {
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      transition: all 0.25s
+    }
+
+    .tns-lazy-img {
+      -webkit-transition: opacity 0.6s;
+      -moz-transition: opacity 0.6s;
+      transition: opacity 0.6s;
+      opacity: 0.6
+    }
+
+    .tns-lazy-img.loaded {
+      opacity: 1
+    }
+
+    .tns-ah {
+      -webkit-transition: height 0s;
+      -moz-transition: height 0s;
+      transition: height 0s
+    }
+
+    .tns-ovh {
+      overflow: hidden
+    }
+
+    .tns-visually-hidden {
+      position: absolute;
+      left: -10000em
+    }
+
+    .tns-transparent {
+      opacity: 0;
+      visibility: hidden
+    }
+
+    .tns-fadeIn {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      z-index: 0
+    }
+
+    .tns-normal,
+    .tns-fadeOut {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      z-index: -1
+    }
+
+    .tns-t-subp2 {
+      margin: 0 auto;
+      width: 310px;
+      position: relative;
+      height: 10px;
+      overflow: hidden
+    }
+
+    .tns-t-ct {
+      width: 2333.3333333%;
+      width: -webkit-calc(100% * 70 / 3);
+      width: -moz-calc(100% * 70 / 3);
+      width: calc(100% * 70 / 3);
+      position: absolute;
+      right: 0
+    }
+
+    .tns-t-ct:after {
+      content: '';
+      display: table;
+      clear: both
+    }
+
+    .tns-t-ct>div {
+      width: 1.4285714%;
+      width: -webkit-calc(100% / 70);
+      width: -moz-calc(100% / 70);
+      width: calc(100% / 70);
+      height: 10px;
+      float: left
+    }
+
+    /*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
+  </style><!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111104961-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111104961-1');
+  </script><!-- Yandex.Metrika counter -->
+  <script> (function (d, w, c) { (w[c] = w[c] || []).push(function () { try { w.yaCounter47036808 = new Ya.Metrika({ id: 47036808, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); } catch (e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script>
+  <!-- /Yandex.Metrika counter --><!-- Yandex.RTB -->
+  <script>window.yaContextCb = window.yaContextCb || []</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+
+<body>
+  <div id="menu" class="mm-menu mm-offcanvas"
+    data-header="&quot;&lt;div class=\&quot;mmenu-user d-flex align-items-center justify-content-center\&quot;&gt;&lt;a class=\&quot;text-link-gray\&quot; href=\&quot;\/login\&quot;&gt;&lt;div class=\&quot;mmenu-user-icon rounded-circle avatar mb-2\&quot;&gt;&lt;div class=\&quot;img-square rounded-circle\&quot;&gt;&lt;svg class=\&quot;icon icon-person\&quot;&gt;&lt;use xlink:href=\&quot;#icon-person\&quot;&gt;&lt;\/use&gt;&lt;\/svg&gt;&lt;\/div&gt;&lt;\/div&gt;&lt;div class=\&quot;text-center\&quot;&gt;&lt;span class=\&quot;mobile-login-in text-link-gray h5 font-weight-normal mb-0\&quot;&gt;\u0412\u043e\u0439\u0442\u0438&lt;\/span&gt;&lt;\/div&gt;&lt;\/a&gt;&lt;\/div&gt;&quot;"
+    data-content="&quot;&lt;nav&gt;&lt;ul class=\&quot;nav navbar-nav\&quot;&gt;&lt;li class=\&quot;nav-item\&quot;&gt;&lt;a href=\&quot;\/anime\&quot; class=\&quot;nav-link text-link-gray  font-weight-600 bo-b-1 py-3 px-4 d-flex align-items-center\&quot;&gt;&lt;span class=\&quot;d-flex mr-auto\&quot;&gt;\u0410\u043d\u0438\u043c\u0435&lt;\/span&gt;&lt;svg class=\&quot;icon icon-lg icon-arrow-right\&quot;&gt;&lt;use xlink:href=\&quot;#icon-arrow-right\&quot;&gt;&lt;\/use&gt;&lt;\/svg&gt;&lt;\/a&gt;&lt;\/li&gt;&lt;li class=\&quot;nav-item\&quot;&gt;&lt;a href=\&quot;\/manga\&quot; class=\&quot;nav-link text-link-gray font-weight-600 bo-b-1 py-3 px-4 d-flex align-items-center\&quot;&gt;&lt;span class=\&quot;d-flex mr-auto\&quot;&gt;\u041c\u0430\u043d\u0433\u0430&lt;\/span&gt;&lt;svg class=\&quot;icon icon-lg icon-arrow-right\&quot;&gt;&lt;use xlink:href=\&quot;#icon-arrow-right\&quot;&gt;&lt;\/use&gt;&lt;\/svg&gt;&lt;\/a&gt;&lt;\/li&gt;&lt;li class=\&quot;nav-item\&quot;&gt;&lt;a class=\&quot;nav-link text-link-gray font-weight-600 py-3 px-4 d-flex align-items-center\&quot; href=\&quot;\/anime\/random\&quot; title=\&quot;\u0421\u043b\u0443\u0447\u0430\u0439\u043d\u043e\u0435 \u0430\u043d\u0438\u043c\u0435\&quot;&gt;\u0421\u043b\u0443\u0447\u0430\u0439\u043d\u043e\u0435 \u0430\u043d\u0438\u043c\u0435&lt;\/a&gt;&lt;\/li&gt;&lt;\/ul&gt;&lt;\/nav&gt;&quot;">
+  </div>
+  <div>
+    <header class="d-none d-lg-block mb-4 w-100 mm-slideout" data-sticky="scrollBar" data-sticky-class="show">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-primary py-0">
+        <div class="container"><a class="navbar-brand d-flex align-items-center position-relative" href="/"><span
+              class="name">AnimeGO</span><img src="/animego/images/logo/logo.png" alt="AnimeGO" /></a>
+          <div class="collapse navbar-collapse position-relative">
+            <ul class="nav navbar-nav mr-auto ml-2">
+              <li class="nav-item"><a class="nav-link" href="https://animego.org/anime" title="Список аниме">Аниме</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="https://animego.org/manga">Манга</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://animego.org/characters"
+                  title="Аниме персонажи">Персонажи</a></li>
+              <li class="nav-item d-none d-xl-block"><a class="nav-link" href="/anime/random"
+                  title="Случайное аниме">Случайное аниме</a></li>
+            </ul>
+            <ul class="nav navbar-nav float-xs-right ml-2 login">
+              <li class="nav-item"><a class="nav-link d-flex align-items-center" rel="nofollow"
+                  href="https://animego.org/connect/vkontakte"><svg class="icon icon-vk mr-1">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg> Войти через вконтакт</a></li>
+              <li class="nav-item"><a class="nav-link d-flex align-items-center" href="/login"><svg
+                    class="icon icon-login mr-1">
+                    <use xlink:href="#icon-login"></use>
+                  </svg> Войти</a></li>
+              <li class="nav-item"><a class="nav-link d-flex align-items-center" id="navbar-search" href="#"><svg
+                    class="icon icon-lg icon-search">
+                    <use xlink:href="#icon-search"></use>
+                  </svg><svg class="icon icon-lg icon-close">
+                    <use xlink:href="#icon-close"></use>
+                  </svg><span style="width:0;pointer-events:none;">&nbsp;</span></a>
+                <div class="search animated"><!--noindex-->
+                  <form action="/search/all" method="GET">
+                    <div class="searchform-wrapper d-flex">
+                      <div class="form-control form-control-sm d-flex align-items-center"><svg
+                          class="icon icon-lg icon-search2 mr-2">
+                          <use xlink:href="#icon-search2"></use>
+                        </svg><input class="form-control-reset w-100 text-placeholder-4" name="q" type="text"
+                          placeholder="Поиск аниме, манги, людей и персонажей" autocomplete="off" data-search="true"
+                          data-search-id="searchsuggestions" data-ajax-url="/search/all?type=small"
+                          data-search-min-query-len="3" data-search-target=".form-control" /></div>
+                    </div>
+                  </form><!--/noindex-->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none mb-0 mb-sm-4 w-100 mm-slideout border-bottom-0"
+      data-sticky="scrollBar" data-sticky-class="show">
+      <div class="d-flex w-100">
+        <div class="d-flex align-self-center mr-auto"><button class="navbar-toggler icon-bar d-flex" id="icon-bar"
+            type="button"><span class="icon-bar-inner"></span></button></div>
+        <div class="text-center d-flex align-self-center mr-auto"><a
+            class="navbar-brand d-flex align-items-center position-relative" href="/"><span
+              class="name">AnimeGO</span><img src="/animego/images/logo/logo.png" alt="AnimeGO" /></a></div>
+        <div class="d-flex align-self-center">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link d-flex align-items-center p-2" id="navbar-search-mobile"
+                href="#"><svg class="icon icon-ul icon-search2">
+                  <use xlink:href="#icon-search2"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="overflow-h">
+    <div id="wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-xl-12 col-ul-12 content-block">
+            <main class="content p-3" id="content">
+              <div>
+                <div class="media mb-3 d-none d-block d-md-flex">
+                  <div class="c-image media-left mr-md-4">
+                    <div class="anime-poster position-relative cursor-pointer">
+                      <div class="poster-icon rounded-circle d-flex justify-content-center align-items-center p-2"
+                        onclick="this.nextElementSibling.querySelector('img').click();"><svg class="icon icon-search">
+                          <use xlink:href="#icon-search"></use>
+                        </svg></div>
+                      <div
+                        data-ajax-url="/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-2333"
+                        data-ajax-appear-params="{&quot;type&quot;:&quot;posters&quot;}" data-ajax-method="GET"><img
+                          width="250" height="350"
+                          src="https://animego.org/media/cache/thumbs_250x350/upload/anime/images/64d4b199e9863172700580.jpg"
+                          srcset="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/64d4b199e9863172700580.jpg 2x"
+                          alt="Реинкарнация безработного: История о приключениях в другом мире 2"
+                          title="Реинкарнация безработного: История о приключениях в другом мире 2"
+                          data-ajaxImageLoad="true" /></div>
+                    </div>
+                    <div class="watch-panel mt-3 p-3 bo-1 br-2"><a
+                        class="btn btn-primary btn-block d-flex align-items-center justify-content-center br-2 cursor-pointer"
+                        href="#video-watch2"><span
+                          class="online float-left rounded-circle text-gray-dark-7 mr-2 d-flex align-items-center justify-content-center"><svg
+                            class="icon icon-play2 ml-1">
+                            <use xlink:href="#icon-play2"></use>
+                          </svg></span><span class="ml-1">
+                          Смотреть онлайн
+                        </span></a><span class="btn btn-block btn-review mt-3 cursor-pointer modal-btn modal.ajax"
+                        data-ajax-url="/login" data-ajax-method="GET"><svg class="icon icon-create">
+                          <use xlink:href="#icon-create"></use>
+                        </svg> Написать отзыв
+                      </span>
+                      <div class="position-relative mt-3 my-list-anime" id="my-list-2333">
+                        <div class="my-list">
+                          <div
+                            class="d-flex align-items-center justify-content-center my-list-header card-header py-2 br-2 collapsed"
+                            data-toggle="collapse" data-target="#mylist-2333" role="button"><span
+                              class="d-flex align-items-center mr-sm-auto"><svg class="icon icon-add mr-1">
+                                <use xlink:href="#icon-add"></use>
+                              </svg><span class="text-underline-hover modal-btn modal.ajax" data-ajax-url="/login"
+                                data-ajax-method="GET">
+                                Добавить в список
+                              </span></span><svg class="icon icon-lg icon-arrow-down">
+                              <use xlink:href="#icon-arrow-down"></use>
+                            </svg></div>
+                          <div class="card-block p-0 collapse" id="mylist-2333">
+                            <div class="list-group mt-minus-1"><span
+                                class="list-group-item list-group-item-action py-2 modal-btn modal.ajax"
+                                data-ajax-url="/login" data-ajax-method="GET" role="button">Смотрю</span><span
+                                class="list-group-item list-group-item-action py-2 modal-btn modal.ajax"
+                                data-ajax-url="/login" data-ajax-method="GET" role="button">Просмотрено</span><span
+                                class="list-group-item list-group-item-action py-2 modal-btn modal.ajax"
+                                data-ajax-url="/login" data-ajax-method="GET" role="button">Отложено</span><span
+                                class="list-group-item list-group-item-action py-2 modal-btn modal.ajax"
+                                data-ajax-url="/login" data-ajax-method="GET" role="button">Брошено</span><span
+                                class="list-group-item list-group-item-action py-2 modal-btn modal.ajax"
+                                data-ajax-url="/login" data-ajax-method="GET" role="button">Запланировано</span><span
+                                class="list-group-item list-group-item-action py-2 modal-btn modal.ajax"
+                                data-ajax-url="/login" data-ajax-method="GET" role="button">Пересматриваю</span></div>
+                          </div>
+                        </div>
+                        <div class="text-center mt-2"><a class="b-tooltipped d-none d-lg-inline"
+                            href="javascript:void(0)" data-ontouchstart="true" data-popover="true"
+                            data-toggle="popover-content" data-html="true" data-placement="bottom" data-content=""
+                            data-original-title="В списках у людей" data-ajax-url="/animelist/2333/show">
+                            В списках у людей
+                          </a><a class="b-tooltipped d-lg-none" href="javascript:void(0)" data-popover="true"
+                            data-toggle="popover" data-html="true" data-placement="bottom" data-content=""
+                            data-original-title="В списках у людей" data-ajax-url="/animelist/2333/show">
+                            В списках у людей
+                          </a></div>
+                      </div>
+                      <div class="text-center mt-2"><a class="bb-dashed-1" href="#review">Читать все рецензии</a></div>
+                    </div>
+                    <div class="anime-tags mt-2"></div>
+                  </div>
+                  <div class="media-body">
+                    <div id="itemRatingBlock">
+                      <div class="itemRatingBlock d-inline-flex align-items-center mb-1 position-relative">
+                        <div class="star-rating mr-2"><svg class="icon icon-star">
+                            <use xlink:href="#icon-star"></use>
+                          </svg></div>
+                        <div class="pr-2">
+                          <div><span class="rating-value">9,5</span><span
+                              class="best-rating text-gray-dark-8">/10</span></div>
+                          <div class="rating-count">8585</div>
+                        </div>
+                        <div class="d-flex position-relative choice-rate pl-2"><select name="rating"
+                            class="rating-native-select">
+                            <option value="0">Выберите свой рейтинг...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                          <div class="choice-rate-star d-flex align-items-center py-1" role="button"
+                            data-my-rate-text="Моя оценка">
+                            <div class="mr-1 text-center star"><svg class="icon icon-star">
+                                <use xlink:href="#icon-star"></use>
+                              </svg></div>
+                            <div class="small rate-this mr-3">Оцените
+                              аниме</div>
+                          </div>
+                          <div class="itemRatingForm justify-content-center">
+                            <div class="itemRatingList d-flex align-items-center"><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="1" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="2" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="3" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="4" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="5" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="6" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="7" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="8" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="9" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a><a href="javascript:void(0)"
+                                class="rate_star d-flex align-items-center tooltip-icon modal-btn modal.ajax"
+                                data-ajax-url="/login" data-rating="10" data-ajax-method="GET"
+                                data-rating-ajax="false"><svg class="icon icon-star">
+                                  <use xlink:href="#icon-star"></use>
+                                </svg></a></div>
+                          </div>
+                        </div>
+                      </div><a class="tooltip-icon d-none d-lg-inline" href="javascript:void(0)"
+                        data-ontouchstart="true" data-popover="true" data-toggle="popover-content" data-html="true"
+                        data-placement="bottom" data-content="" data-title="Оценки людей"
+                        data-ajax-url="/rating/2333/anime/statistics"><svg
+                          class="icon icon-lg icon-info-circle text-gray-dark-2">
+                          <use xlink:href="#icon-info-circle"></use>
+                        </svg></a><a class="tooltip-icon d-none d-sm-inline d-lg-none" href="javascript:void(0)"
+                        data-popover="true" data-toggle="popover" data-html="true" data-placement="bottom"
+                        data-content="" data-title="Оценки людей" data-ajax-url="/rating/2333/anime/statistics"><svg
+                          class="icon icon-lg icon-info-circle text-gray-dark-2">
+                          <use xlink:href="#icon-info-circle"></use>
+                        </svg></a>
+                      <div class="d-sm-none mt-1"><a href="javascript:void(0)" data-popover="true" data-toggle="popover"
+                          data-html="true" data-placement="bottom" data-content="" data-title="Оценки людей"
+                          data-ajax-url="/rating/2333/anime/statistics">Оценки людей</a></div>
+                    </div>
+                    <div class="anime-title">
+                      <div>
+                        <h1>Реинкарнация безработного: История о приключениях в другом мире 2</h1>
+                        <div class="synonyms">
+                          <div class="anime-synonyms" data-readmore="container" data-readmore-btn-show="···">
+                            <ul class="list-unstyled small mb-0" data-readmore="content">
+                              <li>Mushoku Tensei II: Isekai Ittara Honki Dasu</li>
+                              <li>Mushoku Tensei: Jobless Reincarnation Season 2</li>
+                              <li>無職転生 II ～異世界行ったら本気だす～</li>
+                              <li>Jobless Reincarnation: I Will Seriously Try If I Go To Another World</li>
+                              <li>Mushoku Tensei: Isekai Ittara Honki Dasu 2nd Season</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="anime-info">
+                      <dl class="row">
+                        <dt class="col-12 col-sm-4 font-weight-normal text-gray-dark-6">
+                          Следующий эпизод
+                          <span class="tooltip-icon" data-toggle="tooltip" data-placement="top"
+                            data-title="Указана дата выхода Эпизода на телеэкранах Японии. На сайте появится в течении нескольких часов."
+                            tabindex="-1"><svg class="icon icon-lg icon-help text-gray-dark-2">
+                              <use xlink:href="#icon-help"></use>
+                            </svg></span>
+                        </dt>
+                        <dd class="col-12 col-sm-8 mb-1"><span class="b-tooltipped" data-toggle="tooltip"
+                            data-placement="top" data-title="через 6 дней" tabindex="-1">
+                            3 сент. 2023 вс 18:00
+                          </span><span class="d-none d-sm-inline">ожидается выход 9 серии</span></dd>
+                        <dd class="col-12">
+                          <hr />
+                        </dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Тип</dt>
+                        <dd class="col-6 col-sm-8 mb-1">ТВ Сериал</dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Эпизоды</dt>
+                        <dd class="col-6 col-sm-8 mb-1">8 / <span>12</span></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Статус</dt>
+                        <dd class="col-6 col-sm-8 mb-1"><a href="https://animego.org/anime/status/ongoing"
+                            title="Онгоинг">Онгоинг</a></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Жанр</dt>
+                        <dd class="col-6 col-sm-8 mb-1 overflow-h"><a href="https://animego.org/anime/genre/drama"
+                            title="Драма">Драма</a>, <a href="https://animego.org/anime/genre/fantasy"
+                            title="Фэнтези">Фэнтези</a>, <a href="https://animego.org/anime/genre/ecchi"
+                            title="Этти">Этти</a></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Первоисточник</dt>
+                        <dd class="col-6 col-sm-8 mb-1">Легкая новвела</dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Сезон</dt>
+                        <dd class="col-6 col-sm-8 mb-1"><a href="https://animego.org/anime/season/2023/summer">Лето
+                            2023</a></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Выпуск</dt>
+                        <dd class="col-6 col-sm-8 mb-1"><span data-label="с 10 июл. 2023"><span>с 10 июля
+                              2023</span></span></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Студия</dt>
+                        <dd class="col-6 col-sm-8 mb-1 overflow-h"><span><a
+                              href="https://animego.org/anime/studio/studio-bind" title="Studio Bind"><span>Studio
+                                Bind</span></a></span></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">
+                          Рейтинг MPAA
+                          <span class="d-none d-lg-inline tooltip-icon" data-toggle="tooltip" data-placement="top"
+                            data-title="Принятая в США система оценки содержания фильма, введённая Американской киноассоциацией (MPAA). Для расшифровки значений иконки, наведите на нее курсор мыши."
+                            tabindex="-1"><svg class="icon icon-lg icon-help text-gray-dark-2">
+                              <use xlink:href="#icon-help"></use>
+                            </svg></span>
+                        </dt>
+                        <dd class="col-6 col-sm-8 mb-1"><span class="b-tooltipped" data-toggle="tooltip"
+                            data-placement="top" data-title="лица 17 лет и младше на фильм не допускаются"
+                            tabindex="-1">NC-17</span></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">
+                          Возрастные ограничения
+                        </dt>
+                        <dd class="col-6 col-sm-8 mb-1 mt-1"><span
+                            style="display: inline-block;font-weight: 700;padding: 0 4px;border: 0;border-radius: 4px;background: rgba(0,0,0,0.84);word-spacing: -2px;color: #fff;">
+                            18+
+                          </span></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Длительность</dt>
+                        <dd class="col-6 col-sm-8 mb-1">
+                          23 мин. ~ серия
+                        </dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">
+                          Озвучка
+                          <span class="tooltip-icon" data-toggle="tooltip" data-placement="top"
+                            data-title="Создаётся в основном любителями-фандабберами, зачастую при помощи лишь микрофона, компьютера и текста."
+                            tabindex="-1"><svg class="icon icon-lg icon-help text-gray-dark-2">
+                              <use xlink:href="#icon-help"></use>
+                            </svg></span>
+                        </dt>
+                        <dd class="col-6 col-sm-8 mb-1"><a href="/anime/dubbing/anidub">AniDUB</a>, <a
+                            href="/anime/dubbing/anilibria">AniLibria</a>, <a href="/anime/dubbing/shiza-project">SHIZA
+                            Project</a>, <a href="/anime/dubbing/studio-band">Студийная Банда</a>, <a
+                            href="/anime/dubbing/amazing-dubbing">Amazing Dubbing</a>, <a
+                            href="/anime/dubbing/animevost">AnimeVost</a>, <a href="/anime/dubbing/anistar">AniStar</a>,
+                          <a href="/anime/dubbing/Anirise">AniRise</a>, <a href="/anime/dubbing/jam-club">JAM CLUB</a>,
+                          <a href="/anime/dubbing/subtitles">Субтитры</a>, <a href="/anime/dubbing/dream-cast">Dream
+                            Cast</a>
+                        </dd>
+                        <dd class="mt-2 col-12"></dd>
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">Снят по ранобэ</dt>
+                        <dd class="col-6 col-sm-8 mb-1"><a data-popover="true"
+                            data-ajax-url="/manga/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-1220"
+                            data-ajax-appear-params='{"type":"manga"}' data-html="true" data-toggle="popover-content"
+                            data-placement="top" data-content=" "
+                            href="https://animego.org/manga/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-1220">Реинкарнация
+                            безработного: История о приключениях в другом мире</a></dd><!--noindex-->
+                        <dt class="col-6 col-sm-4 font-weight-normal text-gray-dark-6">
+                          Главные герои
+                        </dt><!--/noindex-->
+                        <dd class="col-6 col-sm-8 mb-1">
+                          <div><span><a href="https://animego.org/character/24665-rudeus-greyrat" data-popover="true"
+                                data-ajax-url="/character/24665"
+                                data-ajax-appear-params="{&quot;type&quot;:&quot;small&quot;}" data-html="true"
+                                data-toggle="popover-content" data-placement="top" data-content=" "><span>Рудеус
+                                  Грейрат</span></a></span><span>
+                              (озвучивает <a class="text-link-gray text-underline"
+                                href="https://animego.org/person/530-yumi-uchiyama" data-popover="true"
+                                data-ajax-url="/person/530"
+                                data-ajax-appear-params="{&quot;type&quot;:&quot;small&quot;}" data-html="true"
+                                data-toggle="popover-content" data-placement="top" data-content=" "><span>Юми
+                                  Утияма</span></a>, <a class="text-link-gray text-underline"
+                                href="https://animego.org/person/117-tomokazu-sugita" data-popover="true"
+                                data-ajax-url="/person/117"
+                                data-ajax-appear-params="{&quot;type&quot;:&quot;small&quot;}" data-html="true"
+                                data-toggle="popover-content" data-placement="top" data-content=" "><span>Томокадзу
+                                  Сугита</span></a>)
+                            </span></div>
+                          <div><span><a href="https://animego.org/character/24668-sylphiette" data-popover="true"
+                                data-ajax-url="/character/24668"
+                                data-ajax-appear-params="{&quot;type&quot;:&quot;small&quot;}" data-html="true"
+                                data-toggle="popover-content" data-placement="top"
+                                data-content=" "><span>Сильфиетта</span></a></span><span>
+                              (озвучивает <a class="text-link-gray text-underline"
+                                href="https://animego.org/person/299-ai-kayano" data-popover="true"
+                                data-ajax-url="/person/299"
+                                data-ajax-appear-params="{&quot;type&quot;:&quot;small&quot;}" data-html="true"
+                                data-toggle="popover-content" data-placement="top" data-content=" "><span>Аи
+                                  Каяно</span></a>)
+                            </span></div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="description pb-3">
+                  Второй сезон.
+                </div>
+                <div class="mt-3">
+                  <div class="row">
+                    <div class="col-12 col-md-8 col-lg-9 mb-3 mb-md-0">
+                      <div class="h4 mb-3">Кадры</div>
+                      <div class="d-flex screenshots-block" id="screenshots-list"
+                        data-ajax-url="/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-2333"
+                        data-ajax-appear-params="{&quot;type&quot;:&quot;screenshots&quot;}" data-ajax-method="GET"><a
+                          class="screenshots-item" href="/upload/anime/images/64a1a7f30b8a4915468011.jpg"
+                          data-ajaximageload="true"
+                          data-caption="Кадр 1 из Реинкарнация безработного: История о приключениях в другом мире 2">
+                          <div class="poster-icon rounded-circle d-flex justify-content-center align-items-center p-2"
+                            onclick="this.nextElementSibling.querySelector('img').click();"><svg
+                              class="icon icon-search">
+                              <use xlink:href="#icon-search"></use>
+                            </svg></div><img
+                            alt="Кадр 1 из Реинкарнация безработного: История о приключениях в другом мире 2"
+                            class="img-fluid"
+                            src="https://animego.org/media/cache/thumbs_444x250/upload/anime/images/64a1a7f30b8a4915468011.jpg" />
+                        </a><a class="screenshots-item ml-3" href="/upload/anime/images/64a1a7f30be3e990244001.jpg"
+                          data-ajaximageload="true"
+                          data-caption="Кадр 2 из Реинкарнация безработного: История о приключениях в другом мире 2">
+                          <div class="poster-icon rounded-circle d-flex justify-content-center align-items-center p-2"
+                            onclick="this.nextElementSibling.querySelector('img').click();"><svg
+                              class="icon icon-search">
+                              <use xlink:href="#icon-search"></use>
+                            </svg></div><img
+                            alt="Кадр 2 из Реинкарнация безработного: История о приключениях в другом мире 2"
+                            class="img-fluid"
+                            src="https://animego.org/media/cache/thumbs_444x250/upload/anime/images/64a1a7f30be3e990244001.jpg" />
+                        </a><a class="screenshots-item ml-3" href="/upload/anime/images/64a1a7f30c347695036498.jpg"
+                          data-ajaximageload="true"
+                          data-caption="Кадр 3 из Реинкарнация безработного: История о приключениях в другом мире 2">
+                          <div class="poster-icon rounded-circle d-flex justify-content-center align-items-center p-2"
+                            onclick="this.nextElementSibling.querySelector('img').click();"><svg
+                              class="icon icon-search">
+                              <use xlink:href="#icon-search"></use>
+                            </svg></div><img
+                            alt="Кадр 3 из Реинкарнация безработного: История о приключениях в другом мире 2"
+                            class="img-fluid"
+                            src="https://animego.org/media/cache/thumbs_444x250/upload/anime/images/64a1a7f30c347695036498.jpg" />
+                        </a></div>
+                    </div>
+                    <div class="col">
+                      <div class="h4 mb-3">Трейлер</div>
+                      <div class="video-block"
+                        data-ajax-url="/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-2333"
+                        data-ajax-appear-params="{&quot;type&quot;:&quot;video_links&quot;}" data-ajax-method="GET"><a
+                          data-ajaximageload class="video-item position-relative d-flex lazy"
+                          href="https://www.youtube.com/embed/3ByPlZJvp74"
+                          data-original="https://img.youtube.com/vi/3ByPlZJvp74/mqdefault.jpg">
+                          <div class="lds-spinner">
+                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                          </div>
+                          <div class="video-item-icon m-1 d-flex align-items-center justify-content-center"><svg
+                              class="icon icon-play2 pl-1">
+                              <use xlink:href="#icon-play2"></use>
+                            </svg></div><span class="marker small"><span class="type px-2">PV</span><span
+                              class="duration float-right px-2">01:00</span></span>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="video-watch2">
+                  <div class="seasons mt-3">
+                    <h4 class="pb-3 mb-3 bo-b-2">Связанное</h4>
+                    <div class="seasons-container" style="max-height: 231px;" data-readmore="container"
+                      data-readmore-btn-show='<span class="read-more-text">Показать ещё</span><svg class="icon icon-arrow-down"><use xlink:href="#icon-arrow-down"></use></svg>'>
+                      <div class="seasons-items row" data-readmore="content">
+                        <div class="seasons-item col-6 col-sm-4 col-md-4 col-lg-3 mb-3">
+                          <div class="seasons-item-name text-truncate mb-2"><a class="text-link-gray text-underline"
+                              href="https://animego.org/manga/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-1220"
+                              title="Реинкарнация безработного: История о приключениях в другом мире">
+                              Реинкарнация безработного: История о приключениях в другом мире
+                            </a></div>
+                          <div class="seasons-item-pic float-left mr-2"><a
+                              href="https://animego.org/manga/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-1220"
+                              data-popover="true"
+                              data-ajax-url="/manga/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-1220"
+                              data-ajax-appear-params="{&quot;type&quot;:&quot;manga&quot;}" data-html="true"
+                              data-toggle="popover-content" data-placement="right" data-content=" ">
+                              <div class="anime-grid-lazy lazy"
+                                data-original="https://animego.org/media/cache/thumbs_104x166/upload/manga/images/5ffb1cc026edb372016543.jpg"
+                                style="width: 52px;">
+                                <div class="lds-spinner">
+                                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                              </div>
+                            </a></div>
+                          <div class="seasons-item-info text-gray-dark-5 small mb-1">
+                            Ранобэ / 2014
+                          </div>
+                          <div class="seasons-item-info text-gray-dark-5 small">
+                            Адаптация
+                          </div>
+                        </div>
+                        <div class="seasons-item col-6 col-sm-4 col-md-4 col-lg-3 mb-3">
+                          <div class="seasons-item-name text-truncate mb-2"><a class="text-link-gray text-underline"
+                              href="https://animego.org/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-1893"
+                              title="Реинкарнация безработного: История о приключениях в другом мире. Часть 2">
+                              Реинкарнация безработного: История о приключениях в другом мире. Часть 2
+                            </a></div>
+                          <div class="seasons-item-pic float-left mr-2"><a
+                              href="https://animego.org/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-1893"
+                              data-popover="true"
+                              data-ajax-url="/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-1893"
+                              data-ajax-appear-params="{&quot;type&quot;:&quot;anime&quot;}" data-html="true"
+                              data-toggle="popover-content" data-placement="right" data-content=" ">
+                              <div class="anime-grid-lazy lazy"
+                                data-original="https://animego.org/media/cache/thumbs_104x166/upload/anime/images/6159cdce16165870171196.jpg"
+                                style="width: 52px;">
+                                <div class="lds-spinner">
+                                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                                </div>
+                              </div>
+                            </a></div>
+                          <div class="seasons-item-info text-gray-dark-5 small mb-1">
+                            ТВ Сериал / 2021
+                          </div>
+                          <div class="seasons-item-info text-gray-dark-5 small mb-1">
+                            12 эпизодов
+                          </div>
+                          <div class="seasons-item-info text-gray-dark-5 small">
+                            Предыстория
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3"><!-- Yandex.RTB R-A-752036-1 -->
+                    <div id="yandex_rtb_R-A-752036-1"></div>
+                    <script>window.yaContextCb.push(() => {
+                        Ya.Context.AdvManager.render({
+                          renderTo: 'yandex_rtb_R-A-752036-1',
+                          blockId: 'R-A-752036-1'
+                        })
+                      })</script>
+                  </div>
+                </div>
+              </div>
+            </main>
+            <link href="/animego/css/social-likes_flat.min.css" rel="stylesheet" type="text/css" />
+            <div class="bg-inverse video-player p-3 py-4" id="video-watch">
+              <div class="d-flex mb-3"><strong class="h3 text-white m-0 mr-auto" data-video-player-title>Смотреть аниме
+                  «Реинкарнация безработного: История о приключениях в другом мире 2» онлайн</strong><span class="ml-3"
+                  style="font-size: 36px;color: hsla(0,0%,100%,.3);font-weight: 600;line-height: 1.11;letter-spacing: -2px;pointer-events: none;">
+                  18+
+                </span></div>
+              <div class="dropdown mt-3" id="video-player" data-time="" data-ajax-request-begin="true"
+                data-ajax-request-begin-scroll="true" data-ajax-container="true"
+                data-ajax-appear-params="{&quot;_allow&quot;:true}" data-ajax-url="/anime/2333/player"
+                data-loader="#loader-loading-player" data-loader-style="{&quot;position&quot;:&quot;absolute&quot;}">
+                <div class="video-player-online position-relative" id="loader-loading-player"></div>
+              </div>
+              <div class="text-player-gray py-2 mt-3 align-items-center social d-none d-sm-flex">
+                <div class="mr-3" data-label="Поделиться:"><span>Поделиться с друзьями:</span></div>
+                <div class="social-likes">
+                  <div data-service="vkontakte" class="vkontakte" title="Поделиться ссылкой в Вконтакте">Вконтакте</div>
+                  <div data-service="facebook" class="facebook" title="Поделиться ссылкой в Facebook">Facebook</div>
+                  <div data-service="telegram" class="telegram" title="Поделиться ссылкой в Telegram">Telegram</div>
+                </div>
+              </div>
+              <style>
+                #video-watch {
+                  position: relative;
+                  background: rgba(0, 0, 0, 0.84);
+                }
+
+                #video-watch:before,
+                #video-watch:after {
+                  content: '';
+                  position: absolute;
+                  background: rgba(0, 0, 0, 0.84);
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                }
+
+                #video-watch:before {
+                  left: -100%;
+                }
+
+                #video-watch:after {
+                  left: 100%;
+                }
+              </style>
+            </div>
+            <div class="content p-3"><!--noindex-->
+              <div class="mb-2"><!-- Yandex.RTB R-A-752036-6 -->
+                <div id="yandex_rtb_R-A-752036-6"></div>
+                <script>window.yaContextCb.push(() => {
+                    Ya.Context.AdvManager.render({
+                      renderTo: 'yandex_rtb_R-A-752036-6',
+                      blockId: 'R-A-752036-6'
+                    })
+                  })</script>
+              </div><!--/noindex-->
+              <div class="released-episodes read-more-theme-cursor-one">
+                <h3 class="released-episodes-header">График выхода серий</h3><!--noindex-->
+                <div class="text-muted small mb-3"><b>Внимание!</b> В графике указаны даты выхода эпизодов на
+                  телеэкранах Японии. Эпизоды у нас на сайте появляются в течение дня либо на следующий день, потому что
+                  для фандаб групп требуется время на их перевод и озвучивание.
+                </div><!--/noindex-->
+                <div class="bg-dark text-white py-2">
+                  <div class="row m-0">
+                    <div class="col-3 col-sm-2 col-md" data-label="#"><span>Номер серии</span></div>
+                    <div class="col-5 col-sm-5 col-md-5 col-lg-5 d-none d-sm-block">Название</div>
+                    <div class="col-6 col-sm-3 col-md-3 col-lg-3 text-right">Дата выхода</div>
+                    <div class="col-3 col-sm-2 col-md-2 col-lg-2 text-center"><span
+                        class="d-none d-sm-inline">Статус</span></div>
+                  </div>
+                </div>
+                <div class="read-more-container scroll">
+                  <div class="row released-episodes-container">
+                    <div class="col-12 released-episodes-item">
+                      <div class="released-episodes-item list-group-item-action py-2">
+                        <div class="row m-0">
+                          <div class="col-3 col-sm-2 col-md text-truncate" data-label="10."><span>10 серия</span>
+                            <meta content="10">
+                          </div>
+                          <div
+                            class="col-5 col-sm-5 col-md-5 col-lg-5 text-truncate font-weight-bold d-none d-sm-block">
+                            TBA
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-3 col-lg-3 text-right text-truncate" content="2023-09-10"><a
+                              class="b-tooltipped" href="javascript:void(0)" data-toggle="tooltip" data-placement="top"
+                              data-title="через 13 дней" data-label="10 сент. 2023"><span>10 сентября 2023</span></a>
+                          </div>
+                          <div class="col-3 col-sm-2 col-md-2 col-lg-2 text-center"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 released-episodes-item">
+                      <div class="released-episodes-item list-group-item-action py-2 bo-t-2">
+                        <div class="row m-0">
+                          <div class="col-3 col-sm-2 col-md text-truncate" data-label="9."><span>9 серия</span>
+                            <meta content="9">
+                          </div>
+                          <div
+                            class="col-5 col-sm-5 col-md-5 col-lg-5 text-truncate font-weight-bold d-none d-sm-block">
+                            TBA
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-3 col-lg-3 text-right text-truncate" content="2023-09-03"><a
+                              class="b-tooltipped" href="javascript:void(0)" data-toggle="tooltip" data-placement="top"
+                              data-title="через 6 дней" data-label="3 сент. 2023"><span>3 сентября 2023</span></a></div>
+                          <div class="col-3 col-sm-2 col-md-2 col-lg-2 text-center"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 released-episodes-item">
+                      <div class="released-episodes-item list-group-item-action py-2 bo-t-2">
+                        <div class="row m-0">
+                          <div class="col-3 col-sm-2 col-md text-truncate" data-label="8."><span>8 серия</span>
+                            <meta content="8">
+                          </div>
+                          <div
+                            class="col-5 col-sm-5 col-md-5 col-lg-5 text-truncate font-weight-bold d-none d-sm-block">
+                            TBA
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-3 col-lg-3 text-right text-truncate" content="2023-08-27">
+                            <span data-label="27 авг. 2023"><span>27 августа 2023</span></span>
+                          </div>
+                          <div class="col-3 col-sm-2 col-md-2 col-lg-2 text-center"><span
+                              class="cursor-pointer released-episodes-watch" data-watched-id="30521" data-loader="true"
+                              data-loader-idloader="ispinner" data-loader-classname="ispinner-xs"
+                              data-loader-style="{&quot;position&quot;:&quot;absolute;&quot;,&quot;top&quot;:&quot;50%&quot;,&quot;left&quot;:&quot;50%&quot;,&quot;transform&quot;:&quot;translate(-50%, -50%)&quot;,&quot;z-index&quot;:&quot;110&quot;}"
+                              data-toggle="tooltip" data-placement="top"
+                              data-original-title="Отметить эпизод как просмотренный"
+                              data-watch-text="Отметить эпизод как просмотренный"
+                              data-watched-text="Удалить эпизод из просмотренных" data-ajax-request="true"
+                              data-ajax-appear-params="{&quot;type&quot;:&quot;episodeSchedule&quot;}"
+                              data-ajax-url="/anime/episode/30521/watched" data-ajax-method="POST"><svg
+                                class="icon icon-xl icon-done text-success">
+                                <use xlink:href="#icon-done"></use>
+                              </svg></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row collapse" id="released-episodes-container"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="read-more"><a href="#" class="read-more-link" role="button" id="released-episodes-more"
+                    data-loader=".released-episodes-container" data-ajax-request="true"
+                    data-ajax-container="#released-episodes-container"
+                    data-ajax-appear-params="{&quot;type&quot;:&quot;episodeSchedule&quot;,&quot;episodeNumber&quot;:8,&quot;releasedAt&quot;:&quot;1693148400&quot;}"
+                    data-ajax-url="/anime/reinkarnaciya-bezrabotnogo-istoriya-o-priklyucheniyah-v-drugom-mire-2-2333"><span
+                      class="read-more-text">Показать ещё</span><svg class="icon icon-arrow-down">
+                      <use xlink:href="#icon-arrow-down"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="content p-3">
+              <div class="reviews-list">
+                <div class="h4 text-center mb-3" id="review">
+                  Здесь пока нет рецензий и отзывов к аниме «Реинкарнация безработного: История о приключениях в другом
+                  мире 2», хотите написать?
+                </div>
+                <div class="text-center"><span class="btn btn-review cursor-pointer modal-btn modal.ajax"
+                    data-ajax-url="/login" data-ajax-method="GET"><svg class="icon icon-create">
+                      <use xlink:href="#icon-create"></use>
+                    </svg> Написать отзыв
+                  </span></div>
+              </div>
+            </div>
+            <div class="content mb-3 p-3">
+              <div id="begin-comments" data-thread-init="3974" data-ajax-request-begin="true"
+                data-ajax-request-begin-scroll="true" data-ajax-container="true" data-ajax-scroll-top="200"
+                data-ajax-url="/comment/3974/1/show" data-loader="true"></div>
+            </div>
+          </div>
+          <div class="d-none">
+            <div class="sidebar" id="sidebar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-push"></div>
+      <footer id="footer">
+        <div class="navbar-dark bg-dark">
+          <div class="container">
+            <div class="d-flex align-items-center">
+              <ul class="nav d-none d-sm-flex mr-auto">
+                <li class="nav-item"><a href="/terms" class="nav-link">Соглашение</a></li>
+                <li class="nav-item"><a href="/privacy" class="nav-link">Конфиденциальность</a></li>
+                <li class="nav-item"><a href="/for-right-holders" class="nav-link">Для правообладателей</a></li>
+              </ul>
+              <div class="d-flex">
+                <div class="copyright py-2">© animego.org <span class="date">2017-2023</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer><span id="scrollUp" style="display: none"><svg class="icon icon-lg icon-arrow-up mr-1">
+          <use xlink:href="#icon-arrow-up"></use>
+        </svg> Наверх
+      </span>
+    </div>
+  </div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0"
+    display="none">
+    <symbol viewBox="0 0 24 24" id="icon-add" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-arrow-down" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+      <path d="M0-.75h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z" />
+      <path d="M0-.5h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+      stroke-width="2" id="icon-arrow-left2" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 6L2 16l8 10M2 16h28" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+      <path d="M0-.25h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-arrow-up" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-attach" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1596 1385q0 117-79 196t-196 79q-135 0-235-100L309 784Q196 669 196 513q0-159 110-270t269-111q158 0 273 113l605 606q10 10 10 22 0 16-30.5 46.5T1386 950q-13 0-23-10L757 333q-79-77-181-77-106 0-179 75t-73 181q0 105 76 181l776 777q63 63 145 63 64 0 106-42t42-106q0-82-63-145L825 659q-26-24-60-24-29 0-48 19t-19 48q0 32 25 59l410 410q10 10 10 22 0 16-31 47t-47 31q-12 0-22-10L633 851q-63-61-63-149 0-82 57-139t139-57q88 0 149 63l581 581q100 98 100 235z" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" id="icon-bold" xmlns="http://www.w3.org/2000/svg">
+      <title>bold</title>
+      <path
+        d="M22.121 15.145A7.965 7.965 0 0 0 24 10c0-4.411-3.589-8-8-8H6v28h12c4.411 0 8-3.589 8-8a8.003 8.003 0 0 0-3.879-6.855zM12 6h3.172c1.749 0 3.172 1.794 3.172 4s-1.423 4-3.172 4H12V6zm4.969 20H12v-8h4.969c1.827 0 3.313 1.794 3.313 4s-1.486 4-3.313 4z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-border-color" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.75 7L14 3.25l-10 10V17h3.75l10-10zm2.96-2.96a.996.996 0 0 0 0-1.41L18.37.29a.996.996 0 0 0-1.41 0L15 2.25 18.75 6l1.96-1.96z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M0 20h24v4H0z" fill-opacity=".36" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-chat" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1408 768q0 139-94 257t-256.5 186.5T704 1280q-86 0-176-16-124 88-278 128-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5 2-6l2.5-5 3.5-5.5 4-5 4.5-5 4-4.5q5-6 23-25t26-29.5 22.5-29 25-38.5 20.5-44q-124-72-195-177T0 768q0-139 94-257t256.5-186.5T704 256t353.5 68.5T1314 511t94 257zm384 256q0 120-71 224.5T1526 1425q10 24 20.5 44t25 38.5 22.5 29 26 29.5 23 25q1 1 4 4.5t4.5 5 4 5 3.5 5.5l2.5 5 2 6 .5 6.5-1 6.5q-3 14-13 22t-22 7q-50-7-86-16-154-40-278-128-90 16-176 16-271 0-472-132 58 4 88 4 161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152 129 71 204 178t75 230z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-check-circle" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-cog" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1152 896c0-70.667-25-131-75-181s-110.334-75-181-75c-70.667 0-131 25-181 75s-75 110.333-75 181 25 131 75 181 110.333 75 181 75c70.666 0 131-25 181-75s75-110.333 75-181zm511.5-109v222c0 8-2.417 15.667-7.75 23-5.334 7.333-11.875 11.667-19.875 13l-184.938 28c-12.667 36-25.636 66.333-38.969 91 23.333 33.333 59.016 79.333 107.016 138 6.666 8 10.008 16.333 10.008 25s-2.996 16.333-8.996 23c-18 24.667-50.998 60.667-98.998 108s-79.333 71-93.999 71c-8 0-16.667-3-25.999-9l-138-108c-29.334 15.333-59.667 28-91 38-10.667 90.667-20.334 152.917-29 186.25-4.667 18.667-16.667 28.25-36 28.25H785c-9.334 0-17.5-3.083-24.5-8.75s-10.834-12.958-11.5-21.625l-28-184.063c-32.667-10.667-62.667-23.031-90-37.031l-141 106.984c-6.667 6-15 8.992-25 8.992-9.334 0-17.667-3.671-25-11.004-84-76-139-132.002-165-168.002-4.667-6.667-7-14.334-7-23.001 0-8 2.666-15.667 8-23.001 10-14 27-36.167 51-66.5s42-53.833 54-70.5c-18-33.333-31.667-66.333-41-99l-183-27c-8.667-1.333-15.917-5.5-21.25-12.5-5.334-7-8.25-14.833-8.25-23.5V783c0-8 2.916-15.667 8.25-23 5.333-7.333 11.791-11.667 19.125-13l186.063-28c9.333-30.667 22.364-61.333 39.031-92-26.667-38-62.318-84-106.984-138-6.667-8-9.992-16-9.992-24 0-6.667 3.004-14.333 9.004-23 17.333-24 50.168-59.833 98.502-107.5C418.832 286.833 450.333 263 465 263c8.666 0 17.333 3.333 26 10l138 107c29.333-15.333 59.666-28 91-38 10.666-90.667 20.333-152.417 29-185.75 4.666-18.667 16.666-27.75 36-27.75h222c9.333 0 17.5 2.583 24.5 8.25s10.833 12.708 11.5 21.375l28 183.938c32.666 10.667 62.666 22.969 90 36.969l142-107.016c6-6 14-9.008 24-9.008 8.666 0 17 3.33 25 9.996 86 79.333 141 135.998 165 169.998 4.666 5.333 7 12.666 7 21.999 0 8-2.667 15.667-8 23-10 14-27 36.167-51 66.5s-42 53.833-54 70.5c17.333 33.333 31 66 41 98l183 28c8.666 1.333 15.416 5.5 20.75 12.5 5.333 6.999 7.75 14.832 7.75 23.499z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-cogs" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M832 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm768 512q0-52-38-90t-90-38-90 38-38 90q0 53 37.5 90.5t90.5 37.5 90.5-37.5 37.5-90.5zm0-1024q0-52-38-90t-90-38-90 38-38 90q0 53 37.5 90.5T1472 512t90.5-37.5T1600 384zm-384 421v185q0 10-7 19.5t-16 10.5l-155 24q-11 35-32 76 34 48 90 115 7 10 7 20 0 12-7 19-23 30-82.5 89.5T935 1423q-11 0-21-7l-115-90q-37 19-77 31-11 108-23 155-7 24-30 24H483q-11 0-20-7.5t-10-17.5l-23-153q-34-10-75-31l-118 89q-7 7-20 7-11 0-21-8-144-133-144-160 0-9 7-19 10-14 41-53t47-61q-23-44-35-82l-152-24q-10-1-17-9.5t-7-19.5V802q0-10 7-19.5t16-10.5l155-24q11-35 32-76-34-48-90-115-7-11-7-20 0-12 7-20 22-30 82-89t79-59q11 0 21 7l115 90q34-18 77-32 11-108 23-154 7-24 30-24h186q11 0 20 7.5t10 17.5l23 153q34 10 75 31l118-89q8-7 20-7 11 0 21 8 144 133 144 160 0 9-7 19-12 16-42 54t-45 60q23 48 34 82l152 23q10 2 17 10.5t7 19.5zm640 533v140q0 16-149 31-12 27-30 52 51 113 51 138 0 4-4 7-122 71-124 71-8 0-46-47t-52-68q-20 2-30 2t-30-2q-14 21-52 68t-46 47q-2 0-124-71-4-3-4-7 0-25 51-138-18-25-30-52-149-15-149-31v-140q0-16 149-31 13-29 30-52-51-113-51-138 0-4 4-7 4-2 35-20t59-34 30-16q8 0 46 46.5t52 67.5q20-2 30-2t30 2q51-71 92-112l6-2q4 0 124 70 4 3 4 7 0 25-51 138 17 23 30 52 149 15 149 31zm0-1024v140q0 16-149 31-12 27-30 52 51 113 51 138 0 4-4 7-122 71-124 71-8 0-46-47t-52-68q-20 2-30 2t-30-2q-14 21-52 68t-46 47q-2 0-124-71-4-3-4-7 0-25 51-138-18-25-30-52-149-15-149-31V314q0-16 149-31 13-29 30-52-51-113-51-138 0-4 4-7 4-2 35-20t59-34 30-16q8 0 46 46.5t52 67.5q20-2 30-2t30 2q51-71 92-112l6-2q4 0 124 70 4 3 4 7 0 25-51 138 17 23 30 52 149 15 149 31z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-comment" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 512 512" id="icon-comment-dots" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-create" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-crop" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M17 15h2V7c0-1.1-.9-2-2-2H9v2h8v8zM7 17V1H5v4H1v2h4v10c0 1.1.9 2 2 2h10v4h2v-4h4v-2H7z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-delete" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-doc" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-done" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-ellipsis-h" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M576 736v192q0 40-28 68t-68 28H288q-40 0-68-28t-28-68V736q0-40 28-68t68-28h192q40 0 68 28t28 68zm512 0v192q0 40-28 68t-68 28H800q-40 0-68-28t-28-68V736q0-40 28-68t68-28h192q40 0 68 28t28 68zm512 0v192q0 40-28 68t-68 28h-192q-40 0-68-28t-28-68V736q0-40 28-68t68-28h192q40 0 68 28t28 68z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-error" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-error-outline" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path
+        d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-facebook" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759H734V905H479V609h255V391q0-186 104-288.5T1115 0q147 0 228 12z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-file-download" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-file-upload" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-filter" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1595 295q17 41-14 70l-493 493v742q0 42-39 59-13 5-25 5-27 0-45-19l-256-256q-19-19-19-45V858L211 365q-31-29-14-70 17-39 59-39h1280q42 0 59 39z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-fullscreen" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-group" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-help" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-home" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-info-circle" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1152 1376v-160q0-14-9-23t-23-9h-96V672q0-14-9-23t-23-9H672q-14 0-23 9t-9 23v160q0 14 9 23t23 9h96v320h-96q-14 0-23 9t-9 23v160q0 14 9 23t23 9h448q14 0 23-9t9-23zm-128-896V320q0-14-9-23t-23-9H800q-14 0-23 9t-9 23v160q0 14 9 23t23 9h192q14 0 23-9t9-23zm640 416q0 209-103 385.5T1281.5 1561 896 1664t-385.5-103T231 1281.5 128 896t103-385.5T510.5 231 896 128t385.5 103T1561 510.5 1664 896z" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" id="icon-italic" xmlns="http://www.w3.org/2000/svg">
+      <title>italic</title>
+      <path d="M28 2v2h-4L14 28h4v2H4v-2h4L18 4h-4V2z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-library-music" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 5h-3v5.5a2.5 2.5 0 0 1-5 0 2.5 2.5 0 0 1 2.5-2.5c.57 0 1.08.19 1.5.51V5h4v2zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-login" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1312 896c0 17.333-6.334 32.333-19 45l-544 544c-12.667 12.667-27.667 19-45 19-17.334 0-32.584-6.333-45.25-19-12.667-12.667-19.25-27.667-19.25-45v-287.5H192c-17.334 0-32.584-6.583-45.25-19.25-12.667-12.667-19.25-27.917-19.25-45.25V704c0-17.333 6.583-32.083 19.25-44.75 12.666-12.667 27.916-18.75 45.25-18.75h447.5V352c0-17.333 6.583-32.333 19.25-45 12.666-12.667 27.791-19 45.125-19 17.333 0 32.396 6.333 45.063 19l544.031 544c12.666 12.667 19.031 27.667 19.031 45zm351.5-352v704c0 79.333-27.917 147.417-84.25 203.75-56.334 56.333-123.917 84.75-203.25 84.75h-320c-8.667 0-16.167-3.417-22.5-9.75-6.334-6.333-9.5-13.958-9.5-22.625 0-2.667-.334-9.396-1-20.063-.667-10.667-.834-19.531-.5-26.531.333-7 1.333-14.849 3-23.516 1.666-8.667 5-14.925 10-19.258s11.833-6.258 20.5-6.258h320c44 0 81.416-15.917 112.75-47.25 31.333-31.333 46.75-69.25 46.75-113.25V544c0-44-15.417-81.417-46.75-112.75-31.334-31.333-68.75-46.75-112.75-46.75h-312l-11.5-1.25-11.5-3.125-8-5.563-7-9.031-2-13.516c0-2.667-.334-9.341-1-20.008-.667-10.667-.834-19.504-.5-26.504.333-7 1.333-14.835 3-23.502 1.666-8.667 5-14.917 10-19.251s11.833-6.251 20.5-6.251h320c79.333 0 146.916 27.917 203.25 84.25 56.333 56.334 84.25 123.918 84.25 203.251z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-logout" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M704 1440c0 2.667.333 9.333 1 20 .666 10.667.833 19.5.5 26.5-.334 7-1.334 14.833-3 23.5-1.667 8.667-5 15.417-10 19.75s-11.834 6.75-20.5 6.75H352c-79.334 0-147.417-28.417-203.75-84.75C91.916 1395.417 63.5 1327.333 63.5 1248V544c0-79.333 28.416-146.917 84.75-203.25C204.583 284.417 272.666 256.5 352 256.5h320c8.666 0 16.166 2.917 22.5 9.25 6.333 6.333 9.5 13.708 9.5 22.375 0 2.667.333 9.271 1 19.938.666 10.667.833 19.469.5 26.469-.334 7-1.334 14.818-3 23.484-1.667 8.667-5 15.409-10 19.742S680.666 384.5 672 384.5H352c-44 0-81.917 15.417-113.25 46.75C207.416 462.583 191.5 500 191.5 544v704c0 44 15.916 81.917 47.25 113.25 31.333 31.333 69.25 47.25 113.25 47.25h312l11.5.75 11.5 2.875 8 5.438 7 8.969 2 13.468zm928-544c0 17.333-6.334 32.333-19 45l-544 544c-12.667 12.667-27.667 19-45 19-17.334 0-32.584-6.333-45.25-19-12.667-12.667-19.25-27.667-19.25-45v-287.5H512c-17.334 0-32.584-6.583-45.25-19.25-12.667-12.667-19.25-27.917-19.25-45.25V704c0-17.333 6.583-32.083 19.25-44.75 12.666-12.667 27.916-18.75 45.25-18.75h447.5V352c0-17.333 6.583-32.333 19.25-45 12.666-12.667 27.791-19 45.125-19 17.333 0 32.396 6.333 45.063 19l544.031 544c12.666 12.667 19.031 27.667 19.031 45z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-mobile" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M976 1408q0-33-23.5-56.5T896 1328t-56.5 23.5T816 1408t23.5 56.5T896 1488t56.5-23.5T976 1408zm208-160V544q0-13-9.5-22.5T1152 512H640q-13 0-22.5 9.5T608 544v704q0 13 9.5 22.5t22.5 9.5h512q13 0 22.5-9.5t9.5-22.5zM992 400q0-16-16-16H816q-16 0-16 16t16 16h160q16 0 16-16zm288-16v1024q0 52-38 90t-90 38H640q-52 0-90-38t-38-90V384q0-52 38-90t90-38h512q52 0 90 38t38 90z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-more-vert" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-notifications-none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M912 1696c0-10.667-5.334-16-16-16-39.334 0-73.167-14.167-101.5-42.5-28.334-28.333-42.5-62.167-42.5-101.5 0-10.667-5.334-16-16-16-10.667 0-16 5.333-16 16 0 48.667 17.166 90.167 51.5 124.5 34.333 34.333 75.833 51.5 124.5 51.5 10.666 0 16-5.333 16-16zm-666-287.5h1300c-177.334-200-266-477.583-266-832.25 0-34-8-69.125-24-105.125s-39-70.396-69-103.063-70.5-59.531-121.5-80.531S958 256.016 896 256.016s-118.5 10.492-169.5 31.492S635 335.337 605 368.004s-53 66.998-69 102.998-24 71.249-24 105.249c0 354.667-88.667 632.249-266 832.249zm1482-.5c0 34.667-12.667 64.917-38 90.25-25.334 25.333-55.334 38.25-90 38.25h-448c0 70-25 130.75-75 180.75s-110.334 74.875-181 74.875c-70.667 0-131-24.813-181-74.813S640 1606.5 640 1536.5H192c-34.667 0-64.667-12.917-90-38.25-25.334-25.333-38-55.458-38-90.125 33.333-28 63.666-57.396 91-88.063 27.333-30.667 55.666-70.531 85-119.531 29.333-49 54.166-101.849 74.5-158.516 20.333-56.667 37-125.341 50-206.008S384 668.671 384 576.004c0-101.333 39-195.502 117-282.502s180.333-139.834 307-158.501c-5.334-12.667-8-25.667-8-39 0-26.667 9.333-49.333 28-68 18.666-18.666 41.333-28 68-28 26.666 0 49.333 9.333 68 28 18.666 18.667 28 41.333 28 68 0 13.333-2.667 26.333-8 39 126.666 18.667 229 71.5 307 158.5s117 181.167 117 282.5c0 92.667 6.5 179.333 19.5 260s29.666 149.333 50 206c20.333 56.667 45.166 109.5 74.5 158.5 29.333 49 57.666 88.833 85 119.5 27.333 30.666 57.666 59.999 91 87.999z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-open-with" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+      stroke-width="2" id="icon-options" xmlns="http://www.w3.org/2000/svg">
+      <path d="M28 6H4m24 10H4m24 10H4M24 3v6M8 13v6m12 4v6" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-pause" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-person" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-photo" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-photo-camera" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="3.2" />
+      <path
+        d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-play" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 5v14l11-7z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" id="icon-play2" xmlns="http://www.w3.org/2000/svg">
+      <title>play</title>
+      <path d="M6 4l20 12L6 28z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-rate-review" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0zm15.35 6.41l-1.77-1.77c-.2-.2-.51-.2-.71 0L6 11.53V14h2.47l6.88-6.88c.2-.19.2-.51 0-.71z"
+        fill="none" />
+      <path
+        d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-remove" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 13H5v-2h14v2z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-repeat" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-replay" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-reply" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-report-problem" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-search" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+      stroke-width="2" id="icon-search2" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="14" cy="14" r="12" />
+      <path d="M23 23l7 7" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-skip" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-skip-previous" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" id="icon-smile" xmlns="http://www.w3.org/2000/svg">
+      <title>icon-smile</title>
+      <path
+        d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16zm0-29c7.18 0 13 5.82 13 13s-5.82 13-13 13S3 23.18 3 16 8.82 3 16 3zm-8 7a2 2 0 1 1 3.999-.001A2 2 0 0 1 8 10zm12 0a2 2 0 1 1 3.999-.001A2 2 0 0 1 20 10zm2.003 9.602l2.573 1.544c-1.749 2.908-4.935 4.855-8.576 4.855s-6.827-1.946-8.576-4.855l2.573-1.544C11.221 21.638 13.451 23 16 23s4.779-1.362 6.003-3.398z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-star" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" id="icon-strikethrough" xmlns="http://www.w3.org/2000/svg">
+      <title>icon-strikethrough</title>
+      <path
+        d="M32 16v2h-7.328c.86 1.203 1.328 2.584 1.328 4 0 2.215-1.146 4.345-3.143 5.843C21.002 29.234 18.567 30 16 30s-5.002-.766-6.857-2.157C7.145 26.345 6 24.215 6 22h4c0 2.168 2.748 4 6 4s6-1.832 6-4-2.748-4-6-4H0v-2h9.36a12.062 12.062 0 0 1-.217-.157C7.145 14.345 6 12.215 6 10s1.146-4.345 3.143-5.843C10.998 2.766 13.433 2 16 2s5.002.766 6.857 2.157C24.854 5.655 26 7.785 26 10h-4c0-2.168-2.748-4-6-4s-6 1.832-6 4 2.748 4 6 4c2.468 0 4.814.709 6.64 2H32z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-swap-horiz" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-th" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M512 1248v192q0 40-28 68t-68 28H96q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h320q40 0 68 28t28 68zm0-512v192q0 40-28 68t-68 28H96q-40 0-68-28T0 928V736q0-40 28-68t68-28h320q40 0 68 28t28 68zm640 512v192q0 40-28 68t-68 28H736q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h320q40 0 68 28t28 68zM512 224v192q0 40-28 68t-68 28H96q-40 0-68-28T0 416V224q0-40 28-68t68-28h320q40 0 68 28t28 68zm640 512v192q0 40-28 68t-68 28H736q-40 0-68-28t-28-68V736q0-40 28-68t68-28h320q40 0 68 28t28 68zm640 512v192q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h320q40 0 68 28t28 68zM1152 224v192q0 40-28 68t-68 28H736q-40 0-68-28t-28-68V224q0-40 28-68t68-28h320q40 0 68 28t28 68zm640 512v192q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68V736q0-40 28-68t68-28h320q40 0 68 28t28 68zm0-512v192q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68V224q0-40 28-68t68-28h320q40 0 68 28t28 68z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-th-large" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M832 1024v384q0 52-38 90t-90 38H192q-52 0-90-38t-38-90v-384q0-52 38-90t90-38h512q52 0 90 38t38 90zm0-768v384q0 52-38 90t-90 38H192q-52 0-90-38t-38-90V256q0-52 38-90t90-38h512q52 0 90 38t38 90zm896 768v384q0 52-38 90t-90 38h-512q-52 0-90-38t-38-90v-384q0-52 38-90t90-38h512q52 0 90 38t38 90zm0-768v384q0 52-38 90t-90 38h-512q-52 0-90-38t-38-90V256q0-52 38-90t90-38h512q52 0 90 38t38 90z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-th-list" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M512 1248v192q0 40-28 68t-68 28H96q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h320q40 0 68 28t28 68zm0-512v192q0 40-28 68t-68 28H96q-40 0-68-28T0 928V736q0-40 28-68t68-28h320q40 0 68 28t28 68zm1280 512v192q0 40-28 68t-68 28H736q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h960q40 0 68 28t28 68zM512 224v192q0 40-28 68t-68 28H96q-40 0-68-28T0 416V224q0-40 28-68t68-28h320q40 0 68 28t28 68zm1280 512v192q0 40-28 68t-68 28H736q-40 0-68-28t-28-68V736q0-40 28-68t68-28h960q40 0 68 28t28 68zm0-512v192q0 40-28 68t-68 28H736q-40 0-68-28t-28-68V224q0-40 28-68t68-28h960q40 0 68 28t28 68z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-thumb-down" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-thumb-up" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-twitter" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5T1369.5 1125 1185 1335.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T285 1033q33 5 61 5 43 0 85-11-112-23-185.5-111.5T172 710v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5T884 653q-8-38-8-74 0-134 94.5-228.5T1199 256q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
+    </symbol>
+    <symbol viewBox="0 0 32 32" id="icon-underline" xmlns="http://www.w3.org/2000/svg">
+      <title>underline</title>
+      <path
+        d="M22 2h4v13c0 4.971-4.477 9-10 9S6 19.971 6 15V2h4v13c0 1.255.57 2.459 1.605 3.391C12.758 19.429 14.319 20 16 20s3.242-.572 4.395-1.609C21.43 17.46 22 16.255 22 15V2zM6 26h20v4H6z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-user-plus" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-user-times" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M576 896q-159 0-271.5-112.5T192 512t112.5-271.5T576 128t271.5 112.5T960 512 847.5 783.5 576 896zm1077 320l249 249q9 9 9 23 0 13-9 22l-136 136q-9 9-22 9-14 0-23-9l-249-249-249 249q-9 9-23 9-13 0-22-9l-136-136q-9-9-9-22 0-14 9-23l249-249-249-249q-9-9-9-23 0-13 9-22l136-136q9-9 22-9 14 0 23 9l249 249 249-249q9-9 23-9 13 0 22 9l136 136q9 9 9 22 0 14-9 23zm-498 0l-181 181q-37 37-37 91 0 53 37 90l83 83q-21 3-44 3H139q-121 0-194-69t-73-190q0-53 3.5-103.5t14-109T-84 1084t43-97.5 62-81 85.5-53.5T218 832q19 0 39 17 154 122 319 122t319-122q20-17 39-17 28 0 57 6-28 27-41 50t-13 56q0 54 37 91z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-video" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-visibility" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-visibility-off" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none" />
+      <path
+        d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46A11.804 11.804 0 0 0 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z" />
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" id="icon-vk" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1853 520q23 64-150 294-24 32-65 85-78 100-90 131-17 41 14 81 17 21 81 82h1l1 1 1 1 2 2q141 131 191 221 3 5 6.5 12.5t7 26.5-.5 34-25 27.5-59 12.5l-256 4q-24 5-56-5t-52-22l-20-12q-30-21-70-64t-68.5-77.5-61-58-56.5-15.5q-3 1-8 3.5t-17 14.5-21.5 29.5-17 52-6.5 77.5q0 15-3.5 27.5t-7.5 18.5l-4 5q-18 19-53 22H875q-71 4-146-16.5t-131.5-53-103-66T424 1338l-25-24q-10-10-27.5-30t-71.5-91-106-151T71.5 831-59 559q-6-16-6-27t3-16l4-6q15-19 57-19l274-2q12 2 23 6.5t16 8.5l5 3q16 11 24 32 20 50 46 103.5t41 81.5l16 29q29 60 56 104t48.5 68.5T590 964t34 14 27-5q2-1 5-5t12-22 13.5-47 9.5-81 0-125q-2-40-9-73t-14-46l-6-12q-25-34-85-43-13-2 5-24 17-19 38-30 53-26 239-24 82 1 135 13 20 5 33.5 13.5t20.5 24 10.5 32 3.5 45.5-1 55-2.5 70.5-1.5 82.5q0 11-1 42t-.5 48 3.5 40.5 11.5 39T1093 971q8 2 17 4t26-11 38-34.5 52-67 68-107.5q60-104 107-225 4-10 10-17.5t11-10.5l4-3 5-2.5 13-3 20-.5 288-2q39-5 64 2.5t31 16.5z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="icon-watch-later" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <path d="M0 0h24v24H0V0z" id="cxa" />
+      </defs>
+      <clipPath id="cxb">
+        <use overflow="visible" xlink:href="#cxa" />
+      </clipPath>
+      <path clip-path="url(#cxb)"
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z" />
+    </symbol>
+  </svg>
+  <div id="search-overlay" class="d-lg-none" data-state="closed">
+    <div class="search-mobile m-3"><!--noindex-->
+      <form action="/search/all" method="GET">
+        <div class="searchform-wrapper d-flex">
+          <div class="form-control form-control form-control-lg d-flex align-items-center border-0"><svg
+              class="icon icon-xl icon-search2 mr-2">
+              <use xlink:href="#icon-search2"></use>
+            </svg><input class="form-control-reset w-100 text-placeholder-4" name="q" type="text"
+              placeholder="Поиск аниме, манги, людей и персонажей" autocomplete="off" data-search="true"
+              data-search-container="#search-containe-mobile" data-ajax-url="/search/all?type=small"
+              data-search-min-query-len="3" data-search-target=".form-control" />
+            <div class="input-group-btn"><span id="search-overlay-close"><svg class="icon icon-xl icon-close">
+                  <use xlink:href="#icon-close"></use>
+                </svg></span></div>
+          </div>
+        </div>
+      </form><!--/noindex-->
+    </div>
+    <div id="search-containe-mobile"></div>
+  </div>
+  <link href="/animego/css/animate/animate.min.css?v=3" rel="stylesheet" type="text/css" />
+  <link href="/animego/css/fancybox/fancybox.min.css?v=4" rel="stylesheet" type="text/css" />
+</body>
+
+</html>

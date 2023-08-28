@@ -1,6 +1,7 @@
 package fouranimeisparsing
 
 import (
+	"anime-bot-schedule/pkg/fetch"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -147,37 +148,13 @@ func Fetch(rawurl string) (*AnimeGoResp, error) {
 		return nil, err
 	}
 
-	client := &http.Client{}
-
 	data.URL = url
+	body, err := fetch.GET(url)
 
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, err
-	}
+	info, err := getDataFromHtml(body)
 
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
-
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-
-	document, err := goquery.NewDocumentFromReader(resp.Body)
-	if err != nil {
-		return nil, err
-	}
-
-	document.Find("h1.anime_name").Each(func(index int, element *goquery.Selection) {
-		animeName := element.Text()
-		data.Title = animeName
-	})
-
-	image := document.Find(".anime_poster-img")
-	imgSrc, _ := image.Attr("src")
-
-	data.Poster = imgSrc
+	data.Poster = info.Poster
+	data.Title = info.Title
 
 	return &data, nil
 }

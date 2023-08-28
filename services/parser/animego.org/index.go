@@ -1,10 +1,7 @@
 package animegoorgparsing
 
 import (
-	"net/http"
-	"strings"
-
-	"github.com/PuerkitoBio/goquery"
+	"anime-bot-schedule/pkg/fetch"
 )
 
 type Episod struct {
@@ -21,53 +18,17 @@ type AnimeGoResp struct {
 }
 
 func Fetch(url string) (*AnimeGoResp, error) {
-	client := &http.Client{}
+	body, err := fetch.GET(url)
 
-	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
 	}
 
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
+	data, err := getDataFromHtml(*body)
 
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-
-	document, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
 		return nil, err
 	}
 
-	var episods []Episod
-	document.Find(".released-episodes-container .col-12 .released-episodes-item .row.m-0").Each(func(i int, s *goquery.Selection) {
-		relized := s.Find("div:nth-child(4) span.cursor-pointer").Length() > 0
-
-		number := strings.TrimSpace(s.Find("div:nth-child(1)").Text())
-		title := strings.TrimSpace(s.Find("div:nth-child(2)").Text())
-		date := strings.TrimSpace(s.Find("div:nth-child(3)").Text())
-
-		episods = append(episods, Episod{
-			Title:   title,
-			Date:    date,
-			Relized: relized,
-			Number:  number,
-		})
-	})
-
-	image := document.Find("img").Eq(2)
-
-	srcset, _ := image.Attr("srcset")
-
-	srcsetArray := strings.Split(srcset, " ")
-
-	title, _ := image.Attr("title")
-
-	return &AnimeGoResp{
-		Episods: episods,
-		Image:   &srcsetArray[0],
-		Title:   &title,
-	}, nil
+	return data, nil
 }

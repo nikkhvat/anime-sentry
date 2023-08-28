@@ -1,4 +1,3 @@
-
 dev:
 	go run ./cmd/app.go
 	
@@ -6,7 +5,7 @@ build:
 	go build ./cmd/app.go
 
 test:
-	go test ./services/parser/animevost.org
+	go test ./services/parser/...
 
 start:
 	docker-compose up --build -d
