@@ -7,7 +7,7 @@ import (
 
 	parsing "anime-bot-schedule/services/parser/4anime.is"
 
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"gorm.io/gorm"
 )
 
@@ -33,7 +33,7 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 		return msg
 	}
 
-	err = repositories.AddSubscribeAnime(db, update.Message.Chat.ID, update.Message.Text,
+	err = repositories.SubscribeToAnime(db, update.Message.Chat.ID, update.Message.Text,
 		data.Title, *&data.Poster, data.LastEpisode)
 
 	if err != nil {
@@ -55,11 +55,8 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 		data.Title)
 
 	newMsg := message.NewMessage{
-		Text: messageText,
-	}
-
-	if data.Poster != "" {
-		newMsg.Photo = data.Poster
+		Text:  messageText,
+		Photo: data.Poster,
 	}
 
 	return newMsg

@@ -2,11 +2,12 @@ package fouranimeis
 
 import (
 	"anime-bot-schedule/models"
+	"anime-bot-schedule/pkg/message"
 	parsing "anime-bot-schedule/services/parser/4anime.is"
 	"fmt"
 	"log"
 
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"gorm.io/gorm"
 )
 
@@ -21,16 +22,19 @@ func Check(db *gorm.DB, bot *tgbotapi.BotAPI, anime models.Anime) {
 		var subscribers []models.Subscriber
 		db.Where("anime_id = ?", anime.ID).Find(&subscribers)
 		for _, subscriber := range subscribers {
-			text := fmt.Sprintf("%s \n\nA new series has been released %s \n%s", resp.Title, resp.LastEpisode, resp.LastEpisodeLink)
+			text := fmt.Sprintf("%s \n\nA new series has been released %s", resp.Title, resp.LastEpisode)
 
-			if resp.Poster != "" {
-				msg := tgbotapi.NewPhotoShare(subscriber.TelegramID, resp.Poster)
-				msg.Caption = text
-				_, _ = bot.Send(msg)
-			} else {
-				msg := tgbotapi.NewMessage(subscriber.TelegramID, text)
-				_, _ = bot.Send(msg)
+			msg := message.NewMessage{
+				Text:        text,
+				Photo:       resp.Poster,
+				UserId:      subscriber.TelegramID,
+				Link:        resp.LastEpisodeLink,
+				AnimeId:     anime.ID,
+				LinkTitle:   "Open",
+				Unsubscribe: true,
 			}
+
+			msg.Send(bot)
 		}
 		anime.LastReleasedEpisode = resp.LastEpisode
 		db.Save(&anime)
