@@ -6,12 +6,14 @@ import (
 	"anime-bot-schedule/repositories"
 	"log"
 	"regexp"
+	"strconv"
+	"strings"
 	"time"
 
 	database "anime-bot-schedule/pkg/database"
 
 	"github.com/go-co-op/gocron"
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"gorm.io/gorm"
 
 	fouranimeis "anime-bot-schedule/services/service/4anime.is"
@@ -51,15 +53,60 @@ func main() {
 	updateConfig := tgbotapi.NewUpdate(0)
 	updateConfig.Timeout = 60
 
-	updates, err := bot.GetUpdatesChan(updateConfig)
+	updates := bot.GetUpdatesChan(updateConfig)
 
-	// pattern := `^https://animego.org/anime/.*$`
-	// regexp, err := regexp.Compile(pattern)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	for update := range updates {
+
+		if update.CallbackQuery != nil {
+			callbackData := update.CallbackQuery.Data
+			parts := strings.Split(callbackData, "_")
+
+			if len(parts) != 3 {
+				log.Fatalf("Unexpected callback data: %s", callbackData)
+				return
+			}
+
+			UserId, err := strconv.ParseInt(parts[1], 10, 64)
+			if err != nil {
+				log.Fatalf("Failed to parse UserId: %s", err)
+				return
+			}
+
+			AnimeId, err := strconv.ParseUint(parts[2], 10, 64)
+			if err != nil {
+				log.Fatalf("Failed to parse AnimeId: %s", err)
+				return
+			}
+
+			AnimeIdUint := uint(AnimeId)
+			log.Printf("UserId: %d, AnimeId: %d", UserId, AnimeIdUint)
+
+			repositories.Unsubscribe(db, AnimeIdUint, UserId)
+
+			callback := tgbotapi.NewCallback(update.CallbackQuery.ID, update.CallbackQuery.Data)
+			if _, err := bot.Request(callback); err != nil {
+				panic(err)
+			}
+
+			deleteMsg := tgbotapi.DeleteMessageConfig{
+				ChatID:    update.CallbackQuery.Message.Chat.ID,
+				MessageID: update.CallbackQuery.Message.MessageID,
+			}
+			_, err = bot.Request(deleteMsg)
+			if err != nil {
+				log.Printf("Failed to delete message: %s", err)
+			}
+
+			msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, "Вы отписались от этого аниме!")
+			if _, err := bot.Send(msg); err != nil {
+				panic(err)
+			}
+		}
+
 		if update.Message == nil {
 			continue
 		}
@@ -89,16 +136,15 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	amediaOnline, _ := regexp.Compile(amediaonline.LINK_PATTERN)
 	animevostOrg, _ := regexp.Compile(animevostorg.LINK_PATTERN)
 	fouranimeIs, _ := regexp.Compile(fouranimeis.LINK_PATTERN)
+
 	if animeGOregexp.MatchString(update.Message.Text) {
 		msg := animegoorg.Handle(db, update)
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
-
 	} else if amediaOnline.MatchString(update.Message.Text) {
 		msg := amediaonline.Handle(db, update)
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
-
 	} else if animevostOrg.MatchString(update.Message.Text) {
 		msg := animevostorg.Handle(db, update)
 		msg.UserId = update.Message.Chat.ID

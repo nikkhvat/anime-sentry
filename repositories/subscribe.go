@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func AddSubscribeAnime(db *gorm.DB, telegramID int64, url, name, image, lastReleasedEpisode string) error {
+func SubscribeToAnime(db *gorm.DB, telegramID int64, url, name, image, lastReleasedEpisode string) error {
 	var anime models.Anime
 
 	if err := db.Where("url = ?", url).First(&anime).Error; err != nil {

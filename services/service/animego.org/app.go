@@ -8,7 +8,7 @@ import (
 
 	"gorm.io/gorm"
 
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 var LINK_PATTERN = `^https://animego.org/anime/.*$`
@@ -43,7 +43,7 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 		lastEpisod = data.Episods[2]
 	}
 
-	err = repositories.AddSubscribeAnime(db, update.Message.Chat.ID, update.Message.Text,
+	err = repositories.SubscribeToAnime(db, update.Message.Chat.ID, update.Message.Text,
 		*data.Title, *data.Image, lastEpisod.Number)
 
 	if err != nil {
