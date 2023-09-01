@@ -112,8 +112,6 @@ func getLastEpisod(id string) (*AnimeEpisod, error) {
 		}
 	})
 
-	fmt.Println("Last episode number is:", lastEpisodeNumber)
-
 	episod := AnimeEpisod{
 		EpisodNumber: lastEpisodeNumber,
 		EpisodLink:   lastEpisodeLink,

@@ -1,6 +1,7 @@
 package message
 
 import (
+	"anime-bot-schedule/pkg/telegram"
 	repositoriesmessage "anime-bot-schedule/repositories/message"
 	"fmt"
 	"log"
@@ -19,7 +20,14 @@ type NewMessage struct {
 	DeletePrev  bool
 }
 
-func (msg NewMessage) Send(bot *tgbotapi.BotAPI) tgbotapi.Message {
+// * Send message in telegram
+func (msg NewMessage) Send() *tgbotapi.Message {
+
+	if msg.UserId == 0 {
+		return nil
+	}
+
+	bot := telegram.GetBot()
 
 	isLink := msg.Link != "" && msg.LinkTitle != ""
 
@@ -69,7 +77,7 @@ func (msg NewMessage) Send(bot *tgbotapi.BotAPI) tgbotapi.Message {
 			deletePrevMessage(bot, msg.UserId, msg.AnimeId, sentMessage.MessageID)
 		}
 
-		return sentMessage
+		return &sentMessage
 
 	} else {
 		newMsg := tgbotapi.NewMessage(msg.UserId, msg.Text)
@@ -84,7 +92,7 @@ func (msg NewMessage) Send(bot *tgbotapi.BotAPI) tgbotapi.Message {
 			deletePrevMessage(bot, msg.UserId, msg.AnimeId, sentMessage.MessageID)
 		}
 
-		return sentMessage
+		return &sentMessage
 	}
 }
 
@@ -101,7 +109,7 @@ func deletePrevMessage(bot *tgbotapi.BotAPI, userId int64, animeId uint, mewMess
 		_, err = bot.Request(deletePrevMsg)
 
 		if err != nil {
-			log.Printf("Failed to delete message: %s", err)
+			log.Printf("failed to delete message: %s", err)
 		}
 	}
 

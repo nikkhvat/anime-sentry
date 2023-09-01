@@ -5,14 +5,12 @@ import (
 	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
 	parsing "anime-bot-schedule/services/parser/animego.org"
 	"fmt"
-
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 var LINK_PATTERN = `^https://animego.org/anime/.*$`
 
-func Handle(update tgbotapi.Update) message.NewMessage {
-	data, err := parsing.Fetch(update.Message.Text)
+func Handle(userId int64, text string) message.NewMessage {
+	data, err := parsing.Fetch(text)
 
 	if err != nil {
 		msg := message.NewMessage{
@@ -41,8 +39,7 @@ func Handle(update tgbotapi.Update) message.NewMessage {
 		lastEpisod = data.Episods[2]
 	}
 
-	err = repositories_subscribe.SubscribeToAnime(update.Message.Chat.ID, update.Message.Text,
-		*data.Title, *data.Image, lastEpisod.Number)
+	err = repositories_subscribe.SubscribeToAnime(userId, text, *data.Title, *data.Image, lastEpisod.Number)
 
 	if err != nil {
 		if err.Error() == "you are already subscribed to this anime" {

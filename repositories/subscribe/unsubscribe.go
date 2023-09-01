@@ -25,12 +25,11 @@ func Unsubscribe(animeId uint, userId int64) error {
 		var anime models.Anime
 		result = db.First(&anime, animeId)
 		if result.Error != nil {
-			log.Printf("Error finding anime: %s", result.Error)
+			log.Printf("error finding anime: %s", result.Error)
 			return result.Error
 		}
 		db.Unscoped().Delete(&anime)
 	}
 
-	log.Printf("Successfully unsubscribed user %d from anime %d", userId, animeId)
 	return nil
 }

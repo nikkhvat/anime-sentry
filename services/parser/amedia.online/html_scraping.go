@@ -29,7 +29,7 @@ func getDataFromHtml(html string) (*AnimeGoResp, error) {
 		nextDate = strings.TrimSuffix(nextDate, "/")
 		decodedNextDate, err := urlutil.QueryUnescape(nextDate)
 		if err != nil {
-			log.Println("Error decoding NextEpisodeDate:", err)
+			log.Println("error decoding NextEpisodeDate:", err)
 		} else {
 			nextDate = decodedNextDate
 		}
