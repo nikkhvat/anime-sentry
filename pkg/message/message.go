@@ -1,7 +1,9 @@
 package message
 
 import (
+	repositoriesmessage "anime-bot-schedule/repositories/message"
 	"fmt"
+	"log"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
@@ -14,12 +16,16 @@ type NewMessage struct {
 	Link        string
 	LinkTitle   string
 	Unsubscribe bool
+	DeletePrev  bool
 }
 
-func (msg NewMessage) Send(bot *tgbotapi.BotAPI) {
+func (msg NewMessage) Send(bot *tgbotapi.BotAPI) tgbotapi.Message {
 
 	isLink := msg.Link != "" && msg.LinkTitle != ""
+
 	isUnsubscribe := msg.Unsubscribe && msg.AnimeId != 0
+
+	isRemovePrevMessage := msg.DeletePrev && msg.AnimeId != 0
 
 	emptyKeyboard := !isLink && !msg.Unsubscribe
 
@@ -57,7 +63,14 @@ func (msg NewMessage) Send(bot *tgbotapi.BotAPI) {
 			newMsg.ReplyMarkup = keyboard
 		}
 
-		_, _ = bot.Send(newMsg)
+		sentMessage, _ := bot.Send(newMsg)
+
+		if isRemovePrevMessage {
+			deletePrevMessage(bot, msg.UserId, msg.AnimeId, sentMessage.MessageID)
+		}
+
+		return sentMessage
+
 	} else {
 		newMsg := tgbotapi.NewMessage(msg.UserId, msg.Text)
 
@@ -65,6 +78,38 @@ func (msg NewMessage) Send(bot *tgbotapi.BotAPI) {
 			newMsg.ReplyMarkup = keyboard
 		}
 
-		_, _ = bot.Send(newMsg)
+		sentMessage, _ := bot.Send(newMsg)
+
+		if isRemovePrevMessage {
+			deletePrevMessage(bot, msg.UserId, msg.AnimeId, sentMessage.MessageID)
+		}
+
+		return sentMessage
 	}
+}
+
+func deletePrevMessage(bot *tgbotapi.BotAPI, userId int64, animeId uint, mewMessageId int) error {
+
+	prevMessageId, err := repositoriesmessage.GetLastMessage(animeId, userId)
+
+	if prevMessageId != 0 {
+		deletePrevMsg := tgbotapi.DeleteMessageConfig{
+			ChatID:    userId,
+			MessageID: int(prevMessageId),
+		}
+
+		_, err = bot.Request(deletePrevMsg)
+
+		if err != nil {
+			log.Printf("Failed to delete message: %s", err)
+		}
+	}
+
+	if err != nil {
+		log.Println(err)
+	}
+
+	repositoriesmessage.UpdateLastMessage(animeId, userId, mewMessageId)
+
+	return nil
 }

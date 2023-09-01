@@ -1,4 +1,4 @@
-package amediaonlineparsing
+package amediaonline_parsing
 
 import (
 	"anime-bot-schedule/pkg/file"

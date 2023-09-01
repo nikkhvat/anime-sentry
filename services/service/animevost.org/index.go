@@ -2,18 +2,17 @@ package animevostorg
 
 import (
 	"anime-bot-schedule/pkg/message"
-	"anime-bot-schedule/repositories"
+	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
 	"fmt"
 
 	parsing "anime-bot-schedule/services/parser/animevost.org"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"gorm.io/gorm"
 )
 
 var LINK_PATTERN = `^https://animevost.org/tip/tv/.*$`
 
-func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
+func Handle(update tgbotapi.Update) message.NewMessage {
 	data, err := parsing.Fetch(update.Message.Text)
 
 	if err != nil {
@@ -33,7 +32,7 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 		return msg
 	}
 
-	err = repositories.SubscribeToAnime(db, update.Message.Chat.ID, update.Message.Text,
+	err = repositories_subscribe.SubscribeToAnime(update.Message.Chat.ID, update.Message.Text,
 		data.Title, *&data.Poster, data.AddedEpisode)
 
 	if err != nil {

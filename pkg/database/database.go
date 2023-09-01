@@ -2,6 +2,7 @@ package database
 
 import (
 	"fmt"
+	"sync"
 
 	"log"
 
@@ -11,6 +12,9 @@ import (
 	postgres "gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
+
+var db *gorm.DB
+var once sync.Once
 
 func InitDB() *gorm.DB {
 
@@ -31,6 +35,14 @@ func InitDB() *gorm.DB {
 	}
 
 	autoMigrateDB(db)
+
+	return db
+}
+
+func GetDB() *gorm.DB {
+	once.Do(func() {
+		db = InitDB()
+	})
 
 	return db
 }

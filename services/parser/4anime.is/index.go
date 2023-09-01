@@ -1,4 +1,4 @@
-package fouranimeisparsing
+package fouranimeis_parsing
 
 import (
 	"anime-bot-schedule/pkg/fetch"

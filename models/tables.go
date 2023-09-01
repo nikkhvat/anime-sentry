@@ -14,7 +14,8 @@ type Anime struct {
 
 type Subscriber struct {
 	gorm.Model
-	TelegramID int64 `gorm:"not null"`
-	AnimeID    uint
-	Anime      Anime `gorm:"foreignKey:AnimeID"`
+	TelegramID  int64 `gorm:"not null"`
+	AnimeID     uint
+	Anime       Anime `gorm:"foreignKey:AnimeID"`
+	LastMessage int64
 }
