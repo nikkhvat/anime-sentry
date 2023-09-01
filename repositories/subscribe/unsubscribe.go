@@ -1,14 +1,15 @@
-package repositories
+package repositories_subscribe
 
 import (
 	"log"
 
 	"anime-bot-schedule/models"
-
-	"gorm.io/gorm"
+	"anime-bot-schedule/pkg/database"
 )
 
-func Unsubscribe(db *gorm.DB, animeId uint, userId int64) error {
+func Unsubscribe(animeId uint, userId int64) error {
+	db := database.GetDB()
+
 	var subscription models.Subscriber
 	result := db.Where("anime_id = ? AND telegram_id = ?", animeId, userId).First(&subscription)
 	if result.Error != nil {

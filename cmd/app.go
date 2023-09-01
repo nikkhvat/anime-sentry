@@ -3,18 +3,17 @@ package main
 import (
 	env "anime-bot-schedule/pkg/env"
 	"anime-bot-schedule/pkg/message"
-	"anime-bot-schedule/repositories"
+
+	repositories_check "anime-bot-schedule/repositories/check"
+	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
 	"log"
 	"regexp"
 	"strconv"
 	"strings"
 	"time"
 
-	database "anime-bot-schedule/pkg/database"
-
 	"github.com/go-co-op/gocron"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"gorm.io/gorm"
 
 	fouranimeis "anime-bot-schedule/services/service/4anime.is"
 	amediaonline "anime-bot-schedule/services/service/amedia.online"
@@ -23,9 +22,6 @@ import (
 )
 
 func main() {
-
-	db := database.InitDB()
-
 	botToken := env.Get("TELEGRAM_BOT_TOKEN")
 	bot, err := tgbotapi.NewBotAPI(botToken)
 	if err != nil {
@@ -38,7 +34,7 @@ func main() {
 	s := gocron.NewScheduler(time.UTC)
 
 	_, err = s.Every(30).Minute().Do(func() {
-		repositories.CheckAnimeStatus(db, bot)
+		repositories_check.CheckAnimeStatus(bot)
 	})
 
 	if err != nil {
@@ -85,7 +81,7 @@ func main() {
 			AnimeIdUint := uint(AnimeId)
 			log.Printf("UserId: %d, AnimeId: %d", UserId, AnimeIdUint)
 
-			repositories.Unsubscribe(db, AnimeIdUint, UserId)
+			repositories_subscribe.Unsubscribe(AnimeIdUint, UserId)
 
 			callback := tgbotapi.NewCallback(update.CallbackQuery.ID, update.CallbackQuery.Data)
 			if _, err := bot.Request(callback); err != nil {
@@ -116,7 +112,7 @@ func main() {
 			continue
 		}
 
-		go handleUpdate(db, bot, update)
+		go handleUpdate(bot, update)
 	}
 }
 
@@ -129,7 +125,7 @@ func startBot(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	msg.Send(bot)
 }
 
-func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
+func handleUpdate(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	// * If service is animego.org
 
 	animeGOregexp, _ := regexp.Compile(animegoorg.LINK_PATTERN)
@@ -138,19 +134,19 @@ func handleUpdate(db *gorm.DB, bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	fouranimeIs, _ := regexp.Compile(fouranimeis.LINK_PATTERN)
 
 	if animeGOregexp.MatchString(update.Message.Text) {
-		msg := animegoorg.Handle(db, update)
+		msg := animegoorg.Handle(update)
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
 	} else if amediaOnline.MatchString(update.Message.Text) {
-		msg := amediaonline.Handle(db, update)
+		msg := amediaonline.Handle(update)
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
 	} else if animevostOrg.MatchString(update.Message.Text) {
-		msg := animevostorg.Handle(db, update)
+		msg := animevostorg.Handle(update)
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
 	} else if fouranimeIs.MatchString(update.Message.Text) {
-		msg := fouranimeis.Handle(db, update)
+		msg := fouranimeis.Handle(update)
 		msg.UserId = update.Message.Chat.ID
 		msg.Send(bot)
 	} else {

@@ -1,13 +1,16 @@
-package repositories
+package repositories_subscribe
 
 import (
 	"anime-bot-schedule/models"
+	"anime-bot-schedule/pkg/database"
 	"errors"
 
 	"gorm.io/gorm"
 )
 
-func SubscribeToAnime(db *gorm.DB, telegramID int64, url, name, image, lastReleasedEpisode string) error {
+func SubscribeToAnime(telegramID int64, url, name, image, lastReleasedEpisode string) error {
+	db := database.GetDB()
+
 	var anime models.Anime
 
 	if err := db.Where("url = ?", url).First(&anime).Error; err != nil {

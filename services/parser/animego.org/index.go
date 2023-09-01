@@ -1,4 +1,4 @@
-package animegoorgparsing
+package animegoorg_parsing
 
 import (
 	"anime-bot-schedule/pkg/fetch"

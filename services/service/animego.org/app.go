@@ -2,18 +2,16 @@ package animegoorg
 
 import (
 	"anime-bot-schedule/pkg/message"
-	"anime-bot-schedule/repositories"
+	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
 	parsing "anime-bot-schedule/services/parser/animego.org"
 	"fmt"
-
-	"gorm.io/gorm"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 var LINK_PATTERN = `^https://animego.org/anime/.*$`
 
-func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
+func Handle(update tgbotapi.Update) message.NewMessage {
 	data, err := parsing.Fetch(update.Message.Text)
 
 	if err != nil {
@@ -43,7 +41,7 @@ func Handle(db *gorm.DB, update tgbotapi.Update) message.NewMessage {
 		lastEpisod = data.Episods[2]
 	}
 
-	err = repositories.SubscribeToAnime(db, update.Message.Chat.ID, update.Message.Text,
+	err = repositories_subscribe.SubscribeToAnime(update.Message.Chat.ID, update.Message.Text,
 		*data.Title, *data.Image, lastEpisod.Number)
 
 	if err != nil {

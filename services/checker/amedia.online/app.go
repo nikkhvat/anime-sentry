@@ -1,17 +1,19 @@
-package animegoorgcheck
+package animegoorg_check
 
 import (
 	"anime-bot-schedule/models"
+	"anime-bot-schedule/pkg/database"
 	"anime-bot-schedule/pkg/message"
 	parsing "anime-bot-schedule/services/parser/amedia.online"
 	"fmt"
 	"log"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"gorm.io/gorm"
 )
 
-func Check(db *gorm.DB, bot *tgbotapi.BotAPI, anime models.Anime) {
+func Check(bot *tgbotapi.BotAPI, anime models.Anime) {
+	db := database.GetDB()
+
 	resp, err := parsing.Fetch(anime.URL)
 	if err != nil {
 		log.Printf("error fetching anime data: %s", err)
@@ -31,6 +33,7 @@ func Check(db *gorm.DB, bot *tgbotapi.BotAPI, anime models.Anime) {
 				Link:        anime.URL,
 				AnimeId:     anime.ID,
 				LinkTitle:   "Перейти",
+				DeletePrev:  true,
 				Unsubscribe: true,
 			}
 
