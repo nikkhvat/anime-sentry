@@ -2,7 +2,6 @@ package animegoorg_parsing
 
 import (
 	"fmt"
-	"log"
 	"strconv"
 	"strings"
 
@@ -61,8 +60,6 @@ func getDataFromHtml(html string) (*IData, error) {
 	data.AddedEpisode = data.AddedEpisode + " серия"
 	data.NextEpisode = data.NextEpisode + " серия"
 	data.Poster = "https://animevost.org" + data.Poster
-
-	log.Println(data)
 
 	return &data, nil
 }

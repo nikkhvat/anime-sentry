@@ -2,17 +2,15 @@ package animevostorg_check
 
 import (
 	"anime-bot-schedule/models"
-	"anime-bot-schedule/pkg/database"
 	"anime-bot-schedule/pkg/message"
+	repositories_animes "anime-bot-schedule/repositories/animes"
+	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
 	parsing "anime-bot-schedule/services/parser/animevost.org"
 	"fmt"
 	"log"
-
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
-func Check(bot *tgbotapi.BotAPI, anime models.Anime) {
-	db := database.GetDB()
+func Check(anime models.Anime) {
 
 	resp, err := parsing.Fetch(anime.URL)
 	if err != nil {
@@ -21,8 +19,13 @@ func Check(bot *tgbotapi.BotAPI, anime models.Anime) {
 	}
 
 	if resp.AddedEpisode != anime.LastReleasedEpisode {
-		var subscribers []models.Subscriber
-		db.Where("anime_id = ?", anime.ID).Find(&subscribers)
+
+		subscribers, err := repositories_subscribe.GetByAnime(anime.ID)
+
+		if err != nil {
+			return
+		}
+
 		for _, subscriber := range subscribers {
 			text := fmt.Sprintf("%s \n\nВышла новая серия на телеэкранах японии: %s", resp.Title, resp.AddedEpisode)
 
@@ -37,10 +40,9 @@ func Check(bot *tgbotapi.BotAPI, anime models.Anime) {
 				Unsubscribe: true,
 			}
 
-			msg.Send(bot)
+			msg.Send()
 		}
 
-		anime.LastReleasedEpisode = resp.AddedEpisode
-		db.Save(&anime)
+		repositories_animes.UpdateLastEpisod(anime.ID, resp.AddedEpisode)
 	}
 }

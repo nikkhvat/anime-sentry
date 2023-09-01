@@ -2,18 +2,15 @@ package fouranimeis_check
 
 import (
 	"anime-bot-schedule/models"
-	"anime-bot-schedule/pkg/database"
 	"anime-bot-schedule/pkg/message"
+	repositories_animes "anime-bot-schedule/repositories/animes"
+	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
 	parsing "anime-bot-schedule/services/parser/4anime.is"
 	"fmt"
 	"log"
-
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
-func Check(bot *tgbotapi.BotAPI, anime models.Anime) {
-	db := database.GetDB()
-
+func Check(anime models.Anime) {
 	resp, err := parsing.Fetch(anime.URL)
 	if err != nil {
 		log.Printf("error fetching anime data: %s", err)
@@ -21,8 +18,12 @@ func Check(bot *tgbotapi.BotAPI, anime models.Anime) {
 	}
 
 	if resp.LastEpisode != anime.LastReleasedEpisode {
-		var subscribers []models.Subscriber
-		db.Where("anime_id = ?", anime.ID).Find(&subscribers)
+		subscribers, err := repositories_subscribe.GetByAnime(anime.ID)
+
+		if err != nil {
+			return
+		}
+
 		for _, subscriber := range subscribers {
 			text := fmt.Sprintf("%s \n\nA new series has been released %s", resp.Title, resp.LastEpisode)
 
@@ -37,9 +38,8 @@ func Check(bot *tgbotapi.BotAPI, anime models.Anime) {
 				Unsubscribe: true,
 			}
 
-			msg.Send(bot)
+			msg.Send()
 		}
-		anime.LastReleasedEpisode = resp.LastEpisode
-		db.Save(&anime)
+		repositories_animes.UpdateLastEpisod(anime.ID, resp.LastEpisode)
 	}
 }
