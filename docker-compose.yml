@@ -2,14 +2,14 @@ version: '3.8'
 services:
   anime_schedule_bot:
     build: .
-    depends_on:
-      db:
-        condition: service_healthy
+    entrypoint: ["./deploy/wait-for-postgres.sh"]
+    command: ["./build/app"]
     environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
       - POSTGRES_HOST=db
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB_NAME=anime_schedule
+      - POSTGRES_DB_NAME=anime
       - POSTGRES_PORT=5432
       - POSTGRES_SSL_MODE=disable
       - POSTGRES_TIMEZONE=Europe/Moscow
@@ -18,14 +18,9 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: anime_schedule
+      POSTGRES_DB: anime
     volumes:
       - pgdata:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
 
 volumes:
   pgdata:
