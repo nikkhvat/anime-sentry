@@ -15,7 +15,7 @@ func Handle(userId int64, text string) message.NewMessage {
 
 	if err != nil {
 		msg := message.NewMessage{
-			Text: "Произошла ошибка :(",
+			Text: "An unknown error has occurred :(",
 		}
 
 		return msg
@@ -23,26 +23,26 @@ func Handle(userId int64, text string) message.NewMessage {
 
 	if len(data.Title) == 0 {
 		msg := message.NewMessage{
-			Text:  "Мы не нашли такого аниме",
+			Text:  "We have not found such an anime",
 			Photo: "https://animego.org/animego/images/404.gif",
 		}
 
 		return msg
 	}
 
-	err = repositories_subscribe.SubscribeToAnime(userId, text, data.Title, *&data.Poster, data.LastEpisode)
+	animeId, err := repositories_subscribe.SubscribeToAnime(userId, text, data.Title, *&data.Poster, data.LastEpisode)
 
 	if err != nil {
 		if err.Error() == "you are already subscribed to this anime" {
 			msg := message.NewMessage{
-				Text: "Вы уже подписанны на это аниме!",
+				Text: "Are you already tracking this anime!",
 			}
 
 			return msg
 		}
 
 		msg := message.NewMessage{
-			Text: "Произошла неизвестная ошибка :(",
+			Text: "An unknown error has occurred :(",
 		}
 		return msg
 	}
@@ -51,8 +51,10 @@ func Handle(userId int64, text string) message.NewMessage {
 		data.Title)
 
 	newMsg := message.NewMessage{
-		Text:  messageText,
-		Photo: data.Poster,
+		Text:        messageText,
+		Photo:       data.Poster,
+		Unsubscribe: true,
+		AnimeId:     *animeId,
 	}
 
 	return newMsg

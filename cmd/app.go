@@ -63,7 +63,6 @@ func handleUnsub(update tgbotapi.Update) {
 	parts := strings.Split(callbackData, "_")
 
 	if len(parts) != 3 {
-		log.Fatalf("Unexpected callback data: %s", callbackData)
 		return
 	}
 
