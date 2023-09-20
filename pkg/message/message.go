@@ -49,9 +49,11 @@ func (msg NewMessage) Send() *tgbotapi.Message {
 			),
 		)
 	} else if isUnsubscribe {
+		unsubButtonData := fmt.Sprintf("unsub_%d_%d", msg.UserId, msg.AnimeId)
+
 		keyboard = tgbotapi.NewInlineKeyboardMarkup(
 			tgbotapi.NewInlineKeyboardRow(
-				tgbotapi.NewInlineKeyboardButtonData("Отписаться", "unsubscribe"),
+				tgbotapi.NewInlineKeyboardButtonData("Отписаться", unsubButtonData),
 			),
 		)
 	} else if isLink {

@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func SubscribeToAnime(telegramID int64, url, name, image, lastReleasedEpisode string) error {
+func SubscribeToAnime(telegramID int64, url, name, image, lastReleasedEpisode string) (*uint, error) {
 	db := database.GetDB()
 
 	var anime models.Anime
@@ -24,7 +24,7 @@ func SubscribeToAnime(telegramID int64, url, name, image, lastReleasedEpisode st
 			}
 			db.Create(&anime)
 		} else {
-			return err
+			return nil, err
 		}
 	}
 
@@ -37,11 +37,11 @@ func SubscribeToAnime(telegramID int64, url, name, image, lastReleasedEpisode st
 			}
 			db.Create(&subscriber)
 		} else {
-			return err
+			return nil, err
 		}
 	} else {
-		return errors.New("you are already subscribed to this anime")
+		return nil, errors.New("you are already subscribed to this anime")
 	}
 
-	return nil
+	return &anime.ID, nil
 }

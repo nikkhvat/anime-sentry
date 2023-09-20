@@ -39,7 +39,7 @@ func Handle(userId int64, text string) message.NewMessage {
 		lastEpisod = data.Episods[2]
 	}
 
-	err = repositories_subscribe.SubscribeToAnime(userId, text, *data.Title, *data.Image, lastEpisod.Number)
+	animeId, err := repositories_subscribe.SubscribeToAnime(userId, text, *data.Title, *data.Image, lastEpisod.Number)
 
 	if err != nil {
 		if err.Error() == "you are already subscribed to this anime" {
@@ -60,7 +60,9 @@ func Handle(userId int64, text string) message.NewMessage {
 		*data.Title, lastEpisod.Number, lastEpisod.Title, lastEpisod.Date)
 
 	newMsg := message.NewMessage{
-		Text: messageText,
+		Text:        messageText,
+		Unsubscribe: true,
+		AnimeId:     *animeId,
 	}
 
 	if data.Image != nil && *data.Image != "" {
