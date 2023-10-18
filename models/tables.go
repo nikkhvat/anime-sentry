@@ -19,3 +19,11 @@ type Subscriber struct {
 	Anime       Anime `gorm:"foreignKey:AnimeID"`
 	LastMessage int64
 }
+
+type User struct {
+	ID           int64  `gorm:"not null"`
+	FirstName    string `gorm:"type:varchar(255)"`
+	LastName     string `gorm:"type:varchar(255)"`
+	UserName     string `gorm:"type:varchar(255)"`
+	LanguageCode string `gorm:"type:varchar(255)"`
+}

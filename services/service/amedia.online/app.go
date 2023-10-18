@@ -8,6 +8,8 @@ import (
 )
 
 var LINK_PATTERN = `^https://amedia.online/.*$`
+var LINK = `amedia.online`
+var LANG = "ru"
 
 func Handle(userId int64, text string) message.NewMessage {
 	data, err := parsing.Fetch(text)

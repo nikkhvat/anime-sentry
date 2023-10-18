@@ -50,4 +50,5 @@ func GetDB() *gorm.DB {
 func autoMigrateDB(db *gorm.DB) {
 	_ = db.AutoMigrate(&models.Anime{})
 	_ = db.AutoMigrate(&models.Subscriber{})
+	_ = db.AutoMigrate(&models.User{})
 }

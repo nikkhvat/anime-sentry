@@ -1,8 +1,10 @@
 package main
 
 import (
+	"anime-bot-schedule/models"
 	message "anime-bot-schedule/pkg/message"
 	telegram "anime-bot-schedule/pkg/telegram"
+	"fmt"
 
 	repositories_check "anime-bot-schedule/repositories/check"
 	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
@@ -20,7 +22,43 @@ import (
 	amediaonline "anime-bot-schedule/services/service/amedia.online"
 	animegoorg "anime-bot-schedule/services/service/animego.org"
 	animevostorg "anime-bot-schedule/services/service/animevost.org"
+
+	users_repository "anime-bot-schedule/repositories/users"
 )
+
+type AnimeService struct {
+	Link        string
+	LinkPattern string
+	Lang        string
+	Handle      func(userId int64, text string) message.NewMessage
+}
+
+var SERVICES = []AnimeService{
+	{
+		Link:        fouranimeis.LINK,
+		LinkPattern: fouranimeis.LINK_PATTERN,
+		Lang:        fouranimeis.LANG,
+		Handle:      fouranimeis.Handle,
+	},
+	{
+		Link:        amediaonline.LINK,
+		LinkPattern: amediaonline.LINK_PATTERN,
+		Lang:        amediaonline.LANG,
+		Handle:      amediaonline.Handle,
+	},
+	{
+		Link:        animegoorg.LINK,
+		LinkPattern: animegoorg.LINK_PATTERN,
+		Lang:        animegoorg.LANG,
+		Handle:      animegoorg.Handle,
+	},
+	{
+		Link:        animevostorg.LINK,
+		LinkPattern: animevostorg.LINK_PATTERN,
+		Lang:        animevostorg.LANG,
+		Handle:      animevostorg.Handle,
+	},
+}
 
 func main() {
 	// * Launch a goroutine for regular status checks (every 30 minutes)
@@ -38,6 +76,14 @@ func main() {
 
 	updates := telegram.GetUpdates()
 	for update := range updates {
+		users_repository.AddUser(models.User{
+			ID:           update.Message.From.ID,
+			FirstName:    update.Message.From.FirstName,
+			LastName:     update.Message.From.LastName,
+			UserName:     update.Message.From.UserName,
+			LanguageCode: update.Message.From.LanguageCode,
+		})
+
 		if update.CallbackQuery != nil {
 			handleUnsub(update)
 			continue
@@ -54,6 +100,19 @@ func main() {
 
 		go handleUpdate(update.Message.Chat.ID, update.Message.Text)
 	}
+}
+
+func GenerateAnimeSitesMessage(message string, sites []AnimeService) string {
+	var siteLinks []string
+
+	for _, site := range sites {
+		siteLinks = append(siteLinks, site.Link)
+	}
+
+	formattedSites := "- " + strings.Join(siteLinks, "\n- ")
+
+	fullMessage := fmt.Sprintf("%s:\n\n%s", message, formattedSites)
+	return fullMessage
 }
 
 func handleUnsub(update tgbotapi.Update) {
@@ -74,7 +133,7 @@ func handleUnsub(update tgbotapi.Update) {
 
 	AnimeId, err := strconv.ParseUint(parts[2], 10, 64)
 	if err != nil {
-		log.Fatalf("Failed to parse AnimeId: %s", err)
+		log.Fatalf("failed to parse AnimeId: %s", err)
 		return
 	}
 
@@ -103,42 +162,40 @@ func handleUnsub(update tgbotapi.Update) {
 }
 
 func startBot(userId int64) {
+	messageText := "Добро пожаловать в бот Anime Schedule!\n\nВам нужно прислать ссылку на аниме и я буду уведомлять вас о выходе новых аниме\n\nСайты которые поддерживаются на данный момент"
+
+	result := GenerateAnimeSitesMessage(messageText, SERVICES)
+
 	msg := message.NewMessage{
 		UserId: userId,
-		Text:   "Добро пожаловать в бот Anime Schedule!\n\nВам нужно прислать ссылку на аниме и я буду уведомлять вас о выходе новых аниме\n\nСайты которые поддерживаются на данный момент:\n- animego.org\n- amedia.online\n- animevost.org\n- 4anime.is",
+		Text:   result,
 	}
 
 	msg.Send()
 }
 
 func handleUpdate(userId int64, messageText string) {
-	// * If service is animego.org
+	matchCount := 0
 
-	animeGOregexp, _ := regexp.Compile(animegoorg.LINK_PATTERN)
-	amediaOnline, _ := regexp.Compile(amediaonline.LINK_PATTERN)
-	animevostOrg, _ := regexp.Compile(animevostorg.LINK_PATTERN)
-	fouranimeIs, _ := regexp.Compile(fouranimeis.LINK_PATTERN)
+	for _, service := range SERVICES {
+		regexp, _ := regexp.Compile(service.LinkPattern)
 
-	if animeGOregexp.MatchString(messageText) {
-		msg := animegoorg.Handle(userId, messageText)
-		msg.UserId = userId
-		msg.Send()
-	} else if amediaOnline.MatchString(messageText) {
-		msg := amediaonline.Handle(userId, messageText)
-		msg.UserId = userId
-		msg.Send()
-	} else if animevostOrg.MatchString(messageText) {
-		msg := animevostorg.Handle(userId, messageText)
-		msg.UserId = userId
-		msg.Send()
-	} else if fouranimeIs.MatchString(messageText) {
-		msg := fouranimeis.Handle(userId, messageText)
-		msg.UserId = userId
-		msg.Send()
-	} else {
+		if regexp.MatchString(messageText) {
+			msg := service.Handle(userId, messageText)
+			msg.UserId = userId
+			matchCount++
+			msg.Send()
+		}
+	}
+
+	if matchCount == 0 {
+		messageText := "Не похоже что это ссылка на аниме.\nМы поддерживаем сервисы"
+
+		result := GenerateAnimeSitesMessage(messageText, SERVICES)
+
 		msg := message.NewMessage{
 			UserId: userId,
-			Text:   "Не похоже что это ссылка на аниме.\nМы поддерживаем сервисы:\n\n- animego.org\n- amedia.online\n- animevost.org\n- 4anime.is",
+			Text:   result,
 		}
 
 		msg.Send()

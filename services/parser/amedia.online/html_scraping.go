@@ -17,7 +17,6 @@ func getDataFromHtml(html string) (*AnimeGoResp, error) {
 
 	var result AnimeGoResp
 
-	// Извлечение данных о сериях
 	document.Find(".info").Each(func(i int, s *goquery.Selection) {
 		added := s.Find("span").First().Text()
 		total := s.Find("span").Eq(1).Text()
@@ -40,13 +39,11 @@ func getDataFromHtml(html string) (*AnimeGoResp, error) {
 		result.NextEpisodeDate = nextDate
 	})
 
-	// Извлечение постера
 	document.Find(".film-poster img").Each(func(i int, s *goquery.Selection) {
 		imgSrc, _ := s.Attr("data-src")
 		result.Poster = "https://amedia.online" + imgSrc
 	})
 
-	// Извлечение названия
 	document.Find(".titleor").Each(func(i int, s *goquery.Selection) {
 		title := strings.TrimSpace(s.Text())
 		result.Title = title

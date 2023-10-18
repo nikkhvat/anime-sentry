@@ -9,6 +9,8 @@ import (
 )
 
 var LINK_PATTERN = `^https://4anime.is/.*$`
+var LINK = `4anime.is`
+var LANG = "en"
 
 func Handle(userId int64, text string) message.NewMessage {
 	data, err := parsing.Fetch(text)

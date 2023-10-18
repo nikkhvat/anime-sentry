@@ -9,6 +9,8 @@ import (
 )
 
 var LINK_PATTERN = `^https://animevost.org/tip/tv/.*$`
+var LINK = `animevost.org`
+var LANG = "ru"
 
 func Handle(userId int64, text string) message.NewMessage {
 	data, err := parsing.Fetch(text)

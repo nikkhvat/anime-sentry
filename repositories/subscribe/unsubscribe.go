@@ -13,7 +13,7 @@ func Unsubscribe(animeId uint, userId int64) error {
 	var subscription models.Subscriber
 	result := db.Where("anime_id = ? AND telegram_id = ?", animeId, userId).First(&subscription)
 	if result.Error != nil {
-		log.Printf("Error finding subscription: %s", result.Error)
+		log.Printf("error finding subscription: %s", result.Error)
 		return result.Error
 	}
 	db.Unscoped().Delete(&subscription)

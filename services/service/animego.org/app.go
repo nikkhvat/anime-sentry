@@ -8,6 +8,8 @@ import (
 )
 
 var LINK_PATTERN = `^https://animego.org/anime/.*$`
+var LINK = `animego.org`
+var LANG = "ru"
 
 func Handle(userId int64, text string) message.NewMessage {
 	data, err := parsing.Fetch(text)
