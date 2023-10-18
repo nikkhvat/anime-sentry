@@ -5,26 +5,28 @@ import (
 	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
 	parsing "anime-bot-schedule/services/parser/amedia.online"
 	"fmt"
+
+	localization "anime-bot-schedule/pkg/localization"
 )
 
 var LINK_PATTERN = `^https://amedia.online/.*$`
 var LINK = `amedia.online`
 var LANG = "ru"
 
-func Handle(userId int64, text string) message.NewMessage {
+func Handle(userId int64, text string, lang string) message.NewMessage {
 	data, err := parsing.Fetch(text)
 
 	if err != nil {
-		msg := message.NewMessage{
-			Text: "Произошла ошибка :(",
-		}
+		messageUnknownError := localization.Localize(lang, "unknown_error")
+		msg := message.NewMessage{Text: messageUnknownError}
 
 		return msg
 	}
 
 	if len(data.Title) == 0 {
+		messageNotFound := localization.Localize(lang, "not_found")
 		msg := message.NewMessage{
-			Text:  "Мы не нашли такого аниме",
+			Text:  messageNotFound,
 			Photo: "https://animego.org/animego/images/404.gif",
 		}
 
@@ -35,21 +37,19 @@ func Handle(userId int64, text string) message.NewMessage {
 
 	if err != nil {
 		if err.Error() == "you are already subscribed to this anime" {
-			msg := message.NewMessage{
-				Text: "Вы уже подписанны на это аниме!",
-			}
+			messageAlreadyTracking := localization.Localize(lang, "already_tracking")
+			msg := message.NewMessage{Text: messageAlreadyTracking}
 
 			return msg
 		}
 
-		msg := message.NewMessage{
-			Text: "Произошла неизвестная ошибка :(",
-		}
+		messageUnknownError := localization.Localize(lang, "unknown_error")
+		msg := message.NewMessage{Text: messageUnknownError}
 		return msg
 	}
 
-	messageText := fmt.Sprintf("%s\n\nАниме сохраненно, вы будете получать уведомления когда выйдут новые серии. \n\n%s выйдет %s.",
-		data.Title, data.NextEpisode, data.NextEpisodeDate)
+	messageAnimeSaved := localization.Localize(lang, "anime_saved")
+	messageText := fmt.Sprintf("%s\n%s", data.Title, messageAnimeSaved)
 
 	newMsg := message.NewMessage{
 		Text:        messageText,

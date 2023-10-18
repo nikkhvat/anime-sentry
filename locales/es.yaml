@@ -1,0 +1,31 @@
+- id: "invalid_link"
+  translation: |
+    Esto no parece ser un enlace a un anime. 😣
+    Apoyamos los siguientes servicios:
+
+- id: "welcome"
+  translation: |
+    ¡Bienvenido al Bot de Programación de Anime!
+    Necesitas enviar un enlace al anime y te notificaré sobre el lanzamiento de nuevos animes.
+    Sitios que actualmente son compatibles:
+
+- id: "unsubscribe"
+  translation: "¡Te has dado de baja de este anime!"
+
+- id: "unknown_error"
+  translation: "Ha ocurrido un error desconocido 😣"
+
+- id: "not_found"
+  translation: "No hemos encontrado tal anime"
+
+- id: "already_tracking"
+  translation: "¡Ya estás siguiendo este anime!"
+
+- id: "anime_saved"
+  translation: "El anime está guardado, recibirás notificaciones sobre nuevos episodios"
+
+- id: "new_series"
+  translation: "¡Noticias emocionantes! Se acaba de lanzar un nuevo episodio de tu anime favorito. ¡Sumérgete y disfruta la aventura! 🌟"
+
+- id: "open_link"
+  translation: "Abrir anime"
