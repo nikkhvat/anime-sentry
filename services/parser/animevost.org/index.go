@@ -9,13 +9,13 @@ func Fetch(url string) (*IData, error) {
 	body, err := fetch.GET(url)
 
 	if err != nil {
-		log.Panicln(err)
+		log.Println(err)
 	}
 
 	data, err := getDataFromHtml(*body)
 
 	if err != nil {
-		log.Panicln(err)
+		log.Println(err)
 	}
 
 	return data, nil

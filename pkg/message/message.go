@@ -45,7 +45,7 @@ func (msg NewMessage) Send() *tgbotapi.Message {
 		keyboard = tgbotapi.NewInlineKeyboardMarkup(
 			tgbotapi.NewInlineKeyboardRow(
 				tgbotapi.NewInlineKeyboardButtonURL(msg.LinkTitle, msg.Link),
-				tgbotapi.NewInlineKeyboardButtonData("Отписаться", unsubButtonData),
+				tgbotapi.NewInlineKeyboardButtonData("Unsubscribe", unsubButtonData),
 			),
 		)
 	} else if isUnsubscribe {
@@ -53,7 +53,7 @@ func (msg NewMessage) Send() *tgbotapi.Message {
 
 		keyboard = tgbotapi.NewInlineKeyboardMarkup(
 			tgbotapi.NewInlineKeyboardRow(
-				tgbotapi.NewInlineKeyboardButtonData("Отписаться", unsubButtonData),
+				tgbotapi.NewInlineKeyboardButtonData("Unsubscribe", unsubButtonData),
 			),
 		)
 	} else if isLink {

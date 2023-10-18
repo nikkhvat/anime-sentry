@@ -18,19 +18,25 @@ import (
 	gocron "github.com/go-co-op/gocron"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 
+	"github.com/nicksnyder/go-i18n/v2/i18n"
+	"golang.org/x/text/language"
+	"gopkg.in/yaml.v2"
+
 	fouranimeis "anime-bot-schedule/services/service/4anime.is"
 	amediaonline "anime-bot-schedule/services/service/amedia.online"
 	animegoorg "anime-bot-schedule/services/service/animego.org"
 	animevostorg "anime-bot-schedule/services/service/animevost.org"
 
 	users_repository "anime-bot-schedule/repositories/users"
+
+	localization "anime-bot-schedule/pkg/localization"
 )
 
 type AnimeService struct {
 	Link        string
 	LinkPattern string
 	Lang        string
-	Handle      func(userId int64, text string) message.NewMessage
+	Handle      func(userId int64, text string, lang string) message.NewMessage
 }
 
 var SERVICES = []AnimeService{
@@ -61,6 +67,9 @@ var SERVICES = []AnimeService{
 }
 
 func main() {
+	bundle := i18n.NewBundle(language.English)
+	bundle.RegisterUnmarshalFunc("yaml", yaml.Unmarshal)
+
 	// * Launch a goroutine for regular status checks (every 30 minutes)
 	s := gocron.NewScheduler(time.UTC)
 
@@ -76,13 +85,16 @@ func main() {
 
 	updates := telegram.GetUpdates()
 	for update := range updates {
-		users_repository.AddUser(models.User{
-			ID:           update.Message.From.ID,
-			FirstName:    update.Message.From.FirstName,
-			LastName:     update.Message.From.LastName,
-			UserName:     update.Message.From.UserName,
-			LanguageCode: update.Message.From.LanguageCode,
-		})
+
+		if update.Message != nil {
+			users_repository.AddUser(models.User{
+				ID:           update.Message.From.ID,
+				FirstName:    update.Message.From.FirstName,
+				LastName:     update.Message.From.LastName,
+				UserName:     update.Message.From.UserName,
+				LanguageCode: update.Message.From.LanguageCode,
+			})
+		}
 
 		if update.CallbackQuery != nil {
 			handleUnsub(update)
@@ -94,11 +106,11 @@ func main() {
 		}
 
 		if update.Message.Text == "/start" {
-			go startBot(update.Message.Chat.ID)
+			go startBot(update.Message.Chat.ID, update.Message.From.LanguageCode)
 			continue
 		}
 
-		go handleUpdate(update.Message.Chat.ID, update.Message.Text)
+		go handleUpdate(update.Message.Chat.ID, update.Message.Text, update.Message.From.LanguageCode)
 	}
 }
 
@@ -111,7 +123,7 @@ func GenerateAnimeSitesMessage(message string, sites []AnimeService) string {
 
 	formattedSites := "- " + strings.Join(siteLinks, "\n- ")
 
-	fullMessage := fmt.Sprintf("%s:\n\n%s", message, formattedSites)
+	fullMessage := fmt.Sprintf("%s\n\n%s", message, formattedSites)
 	return fullMessage
 }
 
@@ -143,7 +155,7 @@ func handleUnsub(update tgbotapi.Update) {
 
 	callback := tgbotapi.NewCallback(update.CallbackQuery.ID, update.CallbackQuery.Data)
 	if _, err := bot.Request(callback); err != nil {
-		panic(err)
+		log.Println(err)
 	}
 
 	deleteMsg := tgbotapi.DeleteMessageConfig{
@@ -155,14 +167,16 @@ func handleUnsub(update tgbotapi.Update) {
 		log.Printf("failed to delete message: %s", err)
 	}
 
-	msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, "Вы отписались от этого аниме!")
+	messageTextUnsubscribe := localization.Localize(update.CallbackQuery.From.LanguageCode, "unsubscribe")
+
+	msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, messageTextUnsubscribe)
 	if _, err := bot.Send(msg); err != nil {
-		panic(err)
+		log.Println(err)
 	}
 }
 
-func startBot(userId int64) {
-	messageText := "Добро пожаловать в бот Anime Schedule!\n\nВам нужно прислать ссылку на аниме и я буду уведомлять вас о выходе новых аниме\n\nСайты которые поддерживаются на данный момент"
+func startBot(userId int64, lang string) {
+	messageText := localization.Localize(lang, "welcome")
 
 	result := GenerateAnimeSitesMessage(messageText, SERVICES)
 
@@ -174,14 +188,14 @@ func startBot(userId int64) {
 	msg.Send()
 }
 
-func handleUpdate(userId int64, messageText string) {
+func handleUpdate(userId int64, messageText string, lang string) {
 	matchCount := 0
 
 	for _, service := range SERVICES {
 		regexp, _ := regexp.Compile(service.LinkPattern)
 
 		if regexp.MatchString(messageText) {
-			msg := service.Handle(userId, messageText)
+			msg := service.Handle(userId, messageText, lang)
 			msg.UserId = userId
 			matchCount++
 			msg.Send()
@@ -189,7 +203,7 @@ func handleUpdate(userId int64, messageText string) {
 	}
 
 	if matchCount == 0 {
-		messageText := "Не похоже что это ссылка на аниме.\nМы поддерживаем сервисы"
+		messageText := localization.Localize(lang, "invalid_link")
 
 		result := GenerateAnimeSitesMessage(messageText, SERVICES)
 

@@ -1,0 +1,31 @@
+- id: "invalid_link"
+  translation: |
+    Sembra che questo non sia un link a un anime. 😣
+    Supportiamo i seguenti servizi:
+
+- id: "welcome"
+  translation: |
+    Benvenuto nel Bot Anime Schedule!
+    Devi inviarmi un link all'anime e ti avviserò sul rilascio di nuovi anime
+    Siti attualmente supportati:
+
+- id: "unsubscribe"
+  translation: "Ti sei disiscritto da questo anime!"
+
+- id: "unknown_error"
+  translation: "Si è verificato un errore sconosciuto 😣"
+
+- id: "not_found"
+  translation: "Non abbiamo trovato un anime del genere"
+
+- id: "already_tracking"
+  translation: "Stai già seguendo questo anime!"
+
+- id: "anime_saved"
+  translation: "Anime salvato, riceverai notifiche su nuovi episodi"
+
+- id: "new_series"
+  translation: "Notizie eccitanti! È stato appena rilasciato un nuovo episodio del tuo anime preferito. Immergiti e goditi l'avventura! 🌟"
+
+- id: "open_link"
+  translation: "Apri anime"

@@ -2,6 +2,7 @@ package animevostorg_check
 
 import (
 	"anime-bot-schedule/models"
+	"anime-bot-schedule/pkg/localization"
 	"anime-bot-schedule/pkg/message"
 	repositories_animes "anime-bot-schedule/repositories/animes"
 	repositories_subscribe "anime-bot-schedule/repositories/subscribe"
@@ -27,7 +28,10 @@ func Check(anime models.Anime) {
 		}
 
 		for _, subscriber := range subscribers {
-			text := fmt.Sprintf("%s \n\nВышла новая серия на телеэкранах японии: %s", resp.Title, resp.AddedEpisode)
+			messageNewSeries := localization.Localize(subscriber.LanguageCode, "new_series")
+			text := fmt.Sprintf("%s \n%s", resp.Title, messageNewSeries)
+
+			openButtonText := localization.Localize(subscriber.LanguageCode, "open_link")
 
 			msg := message.NewMessage{
 				Text:        text,
@@ -35,7 +39,7 @@ func Check(anime models.Anime) {
 				UserId:      subscriber.TelegramID,
 				Link:        anime.URL,
 				AnimeId:     anime.ID,
-				LinkTitle:   "Перейти",
+				LinkTitle:   openButtonText,
 				DeletePrev:  true,
 				Unsubscribe: true,
 			}
