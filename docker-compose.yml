@@ -13,6 +13,7 @@ services:
       - POSTGRES_PORT=5432
       - POSTGRES_SSL_MODE=disable
       - POSTGRES_TIMEZONE=Europe/Moscow
+    restart: unless-stopped
   db:
     image: postgres:13-alpine
     environment:
@@ -21,6 +22,7 @@ services:
       POSTGRES_DB: anime
     volumes:
       - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
 
 volumes:
   pgdata:
