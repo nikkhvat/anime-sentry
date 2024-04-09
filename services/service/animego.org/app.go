@@ -58,7 +58,7 @@ func Handle(userId int64, text string, lang string) message.NewMessage {
 	}
 
 	messageAnimeSaved := localization.Localize(lang, "anime_saved")
-	messageText := fmt.Sprintf("%s\n%s", lastEpisod.Title, messageAnimeSaved)
+	messageText := fmt.Sprintf("%s\n%s", *data.Title, messageAnimeSaved)
 
 	newMsg := message.NewMessage{
 		Text:        messageText,

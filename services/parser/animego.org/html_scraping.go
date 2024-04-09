@@ -28,13 +28,13 @@ func getDataFromHtml(html string) (*AnimeGoResp, error) {
 		})
 	})
 
-	image := document.Find("img").Eq(2)
+	image := document.Find("img")
 
 	srcset, _ := image.Attr("srcset")
 
 	srcsetArray := strings.Split(srcset, " ")
 
-	title, _ := image.Attr("title")
+	title := document.Find("h1").Text()
 
 	return &AnimeGoResp{
 		Episods: episods,
