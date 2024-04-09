@@ -11,7 +11,7 @@
 
 ### English-language sites
 
-- [4anime.is](https://4anime.is/)
+- [4anime.gg](https://4anime.gg/)
 
 ### Russian-language sites
 

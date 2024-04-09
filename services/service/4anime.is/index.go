@@ -10,8 +10,8 @@ import (
 	localization "anime-bot-schedule/pkg/localization"
 )
 
-var LINK_PATTERN = `^https://4anime.is/.*$`
-var LINK = `4anime.is`
+var LINK_PATTERN = `^https://4anime.gg/.*$`
+var LINK = `4anime.gg`
 var LANG = "en"
 
 func Handle(userId int64, text string, lang string) message.NewMessage {

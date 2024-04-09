@@ -74,7 +74,7 @@ func currentUrl(rawUrl string) (string, error) {
 func getLastEpisod(id string) (*AnimeEpisod, error) {
 	client := &http.Client{}
 
-	var url2fetch = "https://4anime.is/ajax/episode/list/" + id
+	var url2fetch = "https://4anime.gg/ajax/episode/list/" + id
 
 	req, err := http.NewRequest("GET", url2fetch, nil)
 
@@ -135,7 +135,7 @@ func Fetch(rawurl string) (*AnimeGoResp, error) {
 	lastEpisod, err := getLastEpisod(id)
 
 	data.LastEpisode = lastEpisod.EpisodNumber + " episod"
-	data.LastEpisodeLink = "https://4anime.is" + lastEpisod.EpisodLink
+	data.LastEpisodeLink = "https://4anime.gg" + lastEpisod.EpisodLink
 
 	i, err := strconv.ParseInt(lastEpisod.EpisodNumber, 10, 64)
 	if err == nil {
