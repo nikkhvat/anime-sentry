@@ -16,7 +16,7 @@
 ### Russian-language sites
 
 - [animego.org](https://animego.org/)
-- [amedia.online](https://amedia.online/)
+- [amedia.site](https://amedia.site/)
 - [animevost.org](https://animevost.org/)
 
 ![prewiew image](./prewiew.jpg)

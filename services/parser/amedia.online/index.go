@@ -4,16 +4,13 @@ import (
 	"anime-bot-schedule/pkg/fetch"
 )
 
-type AnimeGoResp struct {
-	AddedEpisode    string
-	TotalEpisodes   string
-	NextEpisode     string
-	NextEpisodeDate string
-	Poster          string
-	Title           string
+type AnimediaOnlineResp struct {
+	AddedEpisode string
+	Poster       string
+	Title        string
 }
 
-func Fetch(url string) (*AnimeGoResp, error) {
+func Fetch(url string) (*AnimediaOnlineResp, error) {
 	body, err := fetch.GET(url)
 
 	if err != nil {

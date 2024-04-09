@@ -6,7 +6,7 @@ import (
 )
 
 func TestParseHtml(t *testing.T) {
-	raw, err := file.Read("../../../tests/dump/html/amedia.online")
+	raw, err := file.Read("../../../tests/dump/html/amedia.site")
 
 	if err != nil {
 		t.Fatalf("error read dump file")

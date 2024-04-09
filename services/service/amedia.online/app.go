@@ -9,8 +9,8 @@ import (
 	localization "anime-bot-schedule/pkg/localization"
 )
 
-var LINK_PATTERN = `^https://amedia.online/.*$`
-var LINK = `amedia.online`
+var LINK_PATTERN = `^https://amedia.site/.*$`
+var LINK = `amedia.site`
 var LANG = "ru"
 
 func Handle(userId int64, text string, lang string) message.NewMessage {

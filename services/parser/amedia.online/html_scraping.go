@@ -1,58 +1,30 @@
 package amediaonline_parsing
 
 import (
-	"log"
-	urlutil "net/url"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
-func getDataFromHtml(html string) (*AnimeGoResp, error) {
+func getDataFromHtml(html string) (*AnimediaOnlineResp, error) {
 
 	document, err := goquery.NewDocumentFromReader(strings.NewReader(html))
 	if err != nil {
 		return nil, err
 	}
 
-	var result AnimeGoResp
+	var result AnimediaOnlineResp
+	src, _ := document.Find(".pmovie__img").Children().Eq(0).Attr("src")
 
-	document.Find(".info").Each(func(i int, s *goquery.Selection) {
-		added := s.Find("span").First().Text()
-		total := s.Find("span").Eq(1).Text()
-		title := strings.TrimSpace(s.Text())
-		next := strings.Split(title, " ")[29] + " серия"
+	result.Title = document.Find("h1").Text()
+	result.Poster = "https://amedia.site" + src
 
-		nextDate, _ := s.Find("span > a").Attr("href")
-		nextDate = strings.TrimPrefix(nextDate, "https://amedia.online/dat/")
-		nextDate = strings.TrimSuffix(nextDate, "/")
-		decodedNextDate, err := urlutil.QueryUnescape(nextDate)
-		if err != nil {
-			log.Println("error decoding NextEpisodeDate:", err)
-		} else {
-			nextDate = decodedNextDate
-		}
+	document.Find(".seriianime").Each(func(i int, s *goquery.Selection) {
+		text := s.Children().Eq(0).Text()
+		textSplit := strings.Split(text, "-")[0]
 
-		result.AddedEpisode = added
-		result.TotalEpisodes = total
-		result.NextEpisode = next
-		result.NextEpisodeDate = nextDate
+		result.AddedEpisode = strings.TrimSpace(textSplit)
 	})
-
-	document.Find(".film-poster img").Each(func(i int, s *goquery.Selection) {
-		imgSrc, _ := s.Attr("data-src")
-		result.Poster = "https://amedia.online" + imgSrc
-	})
-
-	document.Find(".titleor").Each(func(i int, s *goquery.Selection) {
-		title := strings.TrimSpace(s.Text())
-		result.Title = title
-	})
-
-	words := strings.Fields(result.Title)
-	cleanedTitle := strings.Join(words, " ")
-
-	result.Title = cleanedTitle
 
 	return &result, nil
 }
