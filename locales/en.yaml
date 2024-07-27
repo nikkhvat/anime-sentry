@@ -9,6 +9,9 @@
     You need to send a link to the anime and I will notify you about the release of new anime
     Sites that are currently supported:
 
+- id: "unsubscribe_button"
+  translation: "Unsubscribe"
+
 - id: "unsubscribe"
   translation: "You have unsubscribed from this anime!"
 
@@ -22,7 +25,11 @@
   translation: "Are you already tracking this anime!"
 
 - id: "anime_saved"
-  translation: "Anime is saved, you will receive notifications about new episodes"
+  translation: | 
+    Great, now you're following this anime\!
+
+    *episode %s* will be released *%s*\.
+    You will receive notifications as soon as new episodes are released\.
 
 - id: "new_series"
   translation: "Exciting news! A new episode of your favorite anime has just been released. Dive in and enjoy the adventure! 🌟"

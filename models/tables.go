@@ -10,6 +10,7 @@ type Anime struct {
 	LastReleasedEpisode string       `gorm:"type:varchar(255)"`
 	IsSeasonOver        bool         `gorm:"default:false"`
 	Subscribers         []Subscriber `gorm:"foreignKey:AnimeID"`
+	Dubbings            string       `gorm:"type:varchar(512)"`
 }
 
 type Subscriber struct {

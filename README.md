@@ -26,15 +26,7 @@
 The bot currently supports the following languages:
 
 - En (English) 🇬🇧
-- Fr (French) 🇫🇷
-- De (German) 🇩🇪
 - Ru (Russian) 🇷🇺
-- Es (Spanish) 🇪🇸
-- Id (Indonesian) 🇮🇩
-- It (Italian) 🇮🇹
-- Ja (Japanese) 🇯🇵
-- Ko (Korean) 🇰🇷
-- Pt (Portuguese) 🇵🇹
 
 ## Local setup
 
