@@ -4,10 +4,11 @@ import (
 	"context"
 
 	"anime-sentry/models"
+
+	tgBotApi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 type Subscriber interface {
-	SubscribeToAnime(ctx context.Context, telegramID int64, url, name, image, lastReleasedEpisode string, dubbings string) (*uint, error)
-	GetSubscriberByAnimeId(ctx context.Context, animeId uint) ([]models.User, error)
-	UnsubscribeFromAnimeUpdates(ctx context.Context, animeId uint, userId int64) error
+	FollowAnime(ctx context.Context, command string, user models.User) error
+	UnsubscribeFromAnimeUpdates(ctx context.Context, command string, message *tgBotApi.Message, user models.User) error
 }

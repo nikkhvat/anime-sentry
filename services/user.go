@@ -11,5 +11,4 @@ type User interface {
 	ChooseLanguage(ctx context.Context, user models.User) error
 	IsExist(ctx context.Context, id int64) bool
 	Language(ctx context.Context, id int64) (*string, error)
-	GetUserByID(ctx context.Context, id int64) (*models.User, error)
 }

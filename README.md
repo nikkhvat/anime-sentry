@@ -9,15 +9,7 @@
 
 ## Supported websites
 
-### English-language sites
-
-- [4anime.gg](https://4anime.gg/)
-
-### Russian-language sites
-
 - [animego.org](https://animego.org/)
-- [amedia.site](https://amedia.site/)
-- [animevost.org](https://animevost.org/)
 
 ![prewiew image](./prewiew.jpg)
 

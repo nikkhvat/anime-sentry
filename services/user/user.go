@@ -15,10 +15,6 @@ func (c *call) AddNewUser(ctx context.Context, user models.User) error {
 	return c.db.AddNewUser(ctx, user)
 }
 
-func (c *call) GetUserByID(ctx context.Context, id int64) (*models.User, error) {
-	return c.db.GetUserByID(ctx, id)
-}
-
 func (c *call) ChooseLanguage(ctx context.Context, user models.User) error {
 	return c.db.SetUserLanguage(ctx, user)
 }

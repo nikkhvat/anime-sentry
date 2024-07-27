@@ -13,12 +13,14 @@ type DB interface {
 }
 
 type Anime interface {
+	SaveAnime(ctx context.Context, anime models.Anime) (uint, error)
 	GetAnimeList(ctx context.Context) ([]models.Anime, error)
+	GetAnimeById(ctx context.Context, animeId uint) (models.Anime, error)
 	UpdateLastEpisode(ctx context.Context, animeId uint, lastEpisode string) error
 }
 
 type Subscriber interface {
-	SubscribeToAnime(ctx context.Context, telegramID int64, url, name, image, lastReleasedEpisode string, dubbings string) (*uint, error)
+	SubscribeToAnime(ctx context.Context, animeId uint, userId int64) error
 	GetSubscriberByAnimeId(ctx context.Context, animeId uint) ([]models.User, error)
 	UnsubscribeFromAnimeUpdates(ctx context.Context, animeId uint, userId int64) error
 }

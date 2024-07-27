@@ -37,9 +37,8 @@ func (c *call) CheckAnimeStatus(ctx context.Context) error {
 
 			for _, user := range users {
 				messageNewSeries := localization.Localize(user.LanguageCode, "new_series")
+				openLinkButtonText := localization.Localize(user.LanguageCode, "open_link")
 				text := fmt.Sprintf("%s \n%s", anime.Name, messageNewSeries)
-
-				openButtonText := localization.Localize(user.LanguageCode, "open_link")
 
 				msg := message.NewMessage{
 					Text:        text,
@@ -47,7 +46,7 @@ func (c *call) CheckAnimeStatus(ctx context.Context) error {
 					UserId:      user.ID,
 					Link:        anime.URL,
 					AnimeId:     anime.ID,
-					LinkTitle:   openButtonText,
+					LinkTitle:   openLinkButtonText,
 					DeletePrev:  true,
 					Unsubscribe: true,
 				}

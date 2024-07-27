@@ -36,3 +36,6 @@
 
 - id: "open_link"
   translation: "Перейти"
+
+- id: "follow"
+  translation: "Отслеживать"
