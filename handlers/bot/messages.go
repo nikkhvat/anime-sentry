@@ -35,14 +35,10 @@ func (h *handler) Message(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 
 	link := update.Message.Text
 
-	regexp4anime, _ := regexp.Compile(`^https://4anime.gg/.*$`)
-	regexpAmedia, _ := regexp.Compile(`^https://amedia.site/.*$`)
 	regexpAnimego, _ := regexp.Compile(`^https://animego.org/anime/.*$`)
-	regexpAnimevost, _ := regexp.Compile(`^https://animevost.org/tip/tv/.*$`)
 
-	if regexpAnimego.MatchString(link) || regexp4anime.MatchString(link) ||
-		regexpAmedia.MatchString(link) || regexpAnimevost.MatchString(link) {
-		msg := h.anime.CheckAnime(ctx, update.Message.Text, user.ID)
+	if regexpAnimego.MatchString(link) {
+		msg := h.anime.SaveAnime(ctx, update.Message.Text, user.ID)
 		msg.Send(tgbot, *user)
 		return
 	}

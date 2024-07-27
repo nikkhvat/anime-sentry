@@ -28,41 +28,23 @@ func (p *postgres) GetSubscriberByAnimeId(ctx context.Context, animeId uint) ([]
 	return subscribers, nil
 }
 
-func (p *postgres) SubscribeToAnime(ctx context.Context, telegramID int64, url string, name string, image string, lastReleasedEpisode string, dubbings string) (*uint, error) {
-	var anime models.Anime
-
-	if err := p.db.Where("url = ?", url).First(&anime).Error; err != nil {
-		if errors.Is(err, gorm.ErrRecordNotFound) {
-			anime = models.Anime{
-				URL:                 url,
-				Name:                name,
-				Image:               image,
-				LastReleasedEpisode: lastReleasedEpisode,
-				Dubbings:            dubbings,
-				IsSeasonOver:        false,
-			}
-			p.db.Create(&anime)
-		} else {
-			return nil, err
-		}
-	}
-
+func (p *postgres) SubscribeToAnime(ctx context.Context, animeId uint, userId int64) error {
 	var subscriber models.Subscriber
-	if err := p.db.Where("telegram_id = ? AND anime_id = ?", telegramID, anime.ID).First(&subscriber).Error; err != nil {
+	if err := p.db.Where("telegram_id = ? AND anime_id = ?", userId, animeId).First(&subscriber).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			subscriber = models.Subscriber{
-				TelegramID: telegramID,
-				AnimeID:    anime.ID,
+				TelegramID: userId,
+				AnimeID:    animeId,
 			}
 			p.db.Create(&subscriber)
 		} else {
-			return nil, err
+			return err
 		}
 	} else {
-		return nil, errors.New("you are already subscribed to this anime")
+		return errors.New("you are already subscribed to this anime")
 	}
 
-	return &anime.ID, nil
+	return nil
 }
 
 func (p *postgres) UnsubscribeFromAnimeUpdates(ctx context.Context, animeId uint, userId int64) error {
@@ -78,16 +60,6 @@ func (p *postgres) UnsubscribeFromAnimeUpdates(ctx context.Context, animeId uint
 
 	var subscribersCount int64
 	p.db.Model(&models.Subscriber{}).Where("anime_id = ?", animeId).Count(&subscribersCount)
-
-	if subscribersCount == 0 {
-		var anime models.Anime
-		result = p.db.First(&anime, animeId)
-		if result.Error != nil {
-			log.Printf("error finding anime: %s", result.Error)
-			return result.Error
-		}
-		p.db.Unscoped().Delete(&anime)
-	}
 
 	return nil
 }
