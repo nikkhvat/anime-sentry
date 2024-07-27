@@ -2,7 +2,6 @@ package bot
 
 import (
 	"anime-sentry/pkg/localization"
-	"anime-sentry/pkg/message"
 	"context"
 	"fmt"
 	"strings"
@@ -30,6 +29,16 @@ func (h *handler) Command(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 		user.LanguageCode = *language
 	}
 
+	var (
+		changeLanguageButtonText = localization.Localize(user.LanguageCode, "change_language")
+	)
+
+	var generalKeyboard = tgBotApi.NewReplyKeyboard(
+		tgBotApi.NewKeyboardButtonRow(
+			tgBotApi.NewKeyboardButton(changeLanguageButtonText),
+		),
+	)
+
 	switch update.Message.Command() {
 	case "start":
 		if !h.user.IsExist(ctx, user.ID) {
@@ -40,19 +49,17 @@ func (h *handler) Command(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 
 		result := generateAnimeSitesMessage(messageText)
 
-		msg := message.NewMessage{
-			UserId: user.ID,
-			Text:   result,
-		}
+		msg := tgBotApi.NewMessage(user.ID, result)
+		msg.ReplyMarkup = generalKeyboard
 
-		msg.Send(tgbot, user)
+		tgbot.Send(msg)
 	}
 }
 
 func generateAnimeSitesMessage(message string) string {
 	var siteLinks []string
 
-	for _, site := range []string{"4anime.gg", "animego.org", "amedia.site", "animevost.org"} {
+	for _, site := range []string{"animego.org"} {
 		siteLinks = append(siteLinks, site)
 	}
 
