@@ -39,3 +39,12 @@
 
 - id: "follow"
   translation: "Отслеживать"
+
+- id: "change_language"
+  translation: "Изменить язык"
+
+- id: "choose_language"
+  translation: "Выберите язык:"
+
+- id: "language_successfully_changed"
+  translation: "Язык успешно изменен"

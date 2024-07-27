@@ -36,3 +36,15 @@
 
 - id: "open_link"
   translation: "Open anime"
+
+- id: "follow"
+  translation: "Follow"
+
+- id: "change_language"
+  translation: "Change language"
+
+- id: "choose_language"
+  translation: "Choose language:"
+
+- id: "language_successfully_changed"
+  translation: "Language successfully changed"

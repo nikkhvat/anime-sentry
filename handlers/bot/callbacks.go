@@ -5,11 +5,12 @@ import (
 	"strings"
 
 	"anime-sentry/models"
+	"anime-sentry/pkg/localization"
 
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	tgBotApi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
-func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update tgbotapi.Update) {
+func (h *handler) Callback(ctx context.Context, tgbot *tgBotApi.BotAPI, update tgBotApi.Update) {
 	user := models.User{
 		ID:        update.CallbackQuery.From.ID,
 		UserName:  update.CallbackQuery.From.UserName,
@@ -29,11 +30,11 @@ func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update t
 
 	switch update.CallbackQuery.Data {
 	case "en":
-		user.LanguageCode = "en"
-		h.user.ChooseLanguage(ctx, user)
+		changeLang(ctx, "en", &user, tgbot, h)
+		return
 	case "ru":
-		user.LanguageCode = "ru"
-		h.user.ChooseLanguage(ctx, user)
+		changeLang(ctx, "ru", &user, tgbot, h)
+		return
 	}
 
 	if strings.Contains(update.CallbackQuery.Data, "unsub") {
@@ -43,4 +44,25 @@ func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update t
 	if strings.Contains(update.CallbackQuery.Data, "follow") {
 		h.subscriber.FollowAnime(ctx, update.CallbackQuery.Data, user)
 	}
+}
+
+func changeLang(ctx context.Context, lang string, user *models.User, tgbot *tgBotApi.BotAPI, h *handler) {
+	user.LanguageCode = lang
+
+	err := h.user.ChooseLanguage(ctx, *user)
+
+	if err != nil {
+		msg := tgBotApi.NewMessage(user.ID, localization.Localize(user.LanguageCode, "unknown_error"))
+		tgbot.Send(msg)
+		return
+	}
+
+	msg := tgBotApi.NewMessage(user.ID, localization.Localize(user.LanguageCode, "language_successfully_changed"))
+	var generalKeyboard = tgBotApi.NewReplyKeyboard(
+		tgBotApi.NewKeyboardButtonRow(
+			tgBotApi.NewKeyboardButton(localization.Localize(user.LanguageCode, "change_language")),
+		),
+	)
+	msg.ReplyMarkup = generalKeyboard
+	tgbot.Send(msg)
 }
