@@ -1,4 +1,4 @@
-module anime-bot-schedule
+module anime-sentry
 
 go 1.20
 

@@ -1,8 +1,8 @@
 package message
 
 import (
-	"anime-bot-schedule/pkg/telegram"
-	repositoriesmessage "anime-bot-schedule/repositories/message"
+	"anime-sentry/models"
+	"anime-sentry/pkg/localization"
 	"fmt"
 	"log"
 
@@ -10,30 +10,26 @@ import (
 )
 
 type NewMessage struct {
-	Text        string
-	Photo       string
-	UserId      int64
-	AnimeId     uint
-	Link        string
-	LinkTitle   string
-	Unsubscribe bool
-	DeletePrev  bool
+	Text         string
+	Photo        string
+	UserId       int64
+	AnimeId      uint
+	Link         string
+	LinkTitle    string
+	Unsubscribe  bool
+	DeletePrev   bool
+	IsMarkdownV2 bool
 }
 
 // * Send message in telegram
-func (msg NewMessage) Send() *tgbotapi.Message {
-
+func (msg NewMessage) Send(tgbot *tgbotapi.BotAPI, user models.User) *tgbotapi.Message {
 	if msg.UserId == 0 {
 		return nil
 	}
 
-	bot := telegram.GetBot()
-
 	isLink := msg.Link != "" && msg.LinkTitle != ""
 
 	isUnsubscribe := msg.Unsubscribe && msg.AnimeId != 0
-
-	isRemovePrevMessage := msg.DeletePrev && msg.AnimeId != 0
 
 	emptyKeyboard := !isLink && !msg.Unsubscribe
 
@@ -45,7 +41,10 @@ func (msg NewMessage) Send() *tgbotapi.Message {
 		keyboard = tgbotapi.NewInlineKeyboardMarkup(
 			tgbotapi.NewInlineKeyboardRow(
 				tgbotapi.NewInlineKeyboardButtonURL(msg.LinkTitle, msg.Link),
-				tgbotapi.NewInlineKeyboardButtonData("Unsubscribe", unsubButtonData),
+
+				tgbotapi.NewInlineKeyboardButtonData(
+					localization.Localize(user.LanguageCode, "unsubscribe_button"),
+					unsubButtonData),
 			),
 		)
 	} else if isUnsubscribe {
@@ -53,7 +52,10 @@ func (msg NewMessage) Send() *tgbotapi.Message {
 
 		keyboard = tgbotapi.NewInlineKeyboardMarkup(
 			tgbotapi.NewInlineKeyboardRow(
-				tgbotapi.NewInlineKeyboardButtonData("Unsubscribe", unsubButtonData),
+
+				tgbotapi.NewInlineKeyboardButtonData(
+					localization.Localize(user.LanguageCode, "unsubscribe_button"),
+					unsubButtonData),
 			),
 		)
 	} else if isLink {
@@ -73,10 +75,13 @@ func (msg NewMessage) Send() *tgbotapi.Message {
 			newMsg.ReplyMarkup = keyboard
 		}
 
-		sentMessage, _ := bot.Send(newMsg)
+		if msg.IsMarkdownV2 {
+			newMsg.ParseMode = "MarkdownV2"
+		}
+		sentMessage, err := tgbot.Send(newMsg)
 
-		if isRemovePrevMessage {
-			deletePrevMessage(bot, msg.UserId, msg.AnimeId, sentMessage.MessageID)
+		if err != nil {
+			log.Println(err)
 		}
 
 		return &sentMessage
@@ -88,38 +93,15 @@ func (msg NewMessage) Send() *tgbotapi.Message {
 			newMsg.ReplyMarkup = keyboard
 		}
 
-		sentMessage, _ := bot.Send(newMsg)
+		if msg.IsMarkdownV2 {
+			newMsg.ParseMode = "MarkdownV2"
+		}
+		sentMessage, err := tgbot.Send(newMsg)
 
-		if isRemovePrevMessage {
-			deletePrevMessage(bot, msg.UserId, msg.AnimeId, sentMessage.MessageID)
+		if err != nil {
+			log.Println(err)
 		}
 
 		return &sentMessage
 	}
-}
-
-func deletePrevMessage(bot *tgbotapi.BotAPI, userId int64, animeId uint, mewMessageId int) error {
-
-	prevMessageId, err := repositoriesmessage.GetLastMessage(animeId, userId)
-
-	if prevMessageId != 0 {
-		deletePrevMsg := tgbotapi.DeleteMessageConfig{
-			ChatID:    userId,
-			MessageID: int(prevMessageId),
-		}
-
-		_, err = bot.Request(deletePrevMsg)
-
-		if err != nil {
-			log.Printf("failed to delete message: %s", err)
-		}
-	}
-
-	if err != nil {
-		log.Println(err)
-	}
-
-	repositoriesmessage.UpdateLastMessage(animeId, userId, mewMessageId)
-
-	return nil
 }

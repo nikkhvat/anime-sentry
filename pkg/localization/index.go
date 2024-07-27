@@ -14,7 +14,7 @@ import (
 var bundle *i18n.Bundle
 var once sync.Once
 
-var supportedLangs = []string{"en", "fr", "de", "ru", "es", "id", "it", "ja", "ko", "pt"}
+var supportedLangs = []string{"en", "ru"}
 
 func SupportedLangs(lang string) string {
 	for _, supportedLang := range supportedLangs {
