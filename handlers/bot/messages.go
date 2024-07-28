@@ -44,10 +44,6 @@ func (h *handler) Message(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 		return
 	}
 
-	log.Println("update.Message.Text", update.Message.Text)
-	log.Println("localization.Localize(user.LanguageCode, change_language)", localization.Localize(user.LanguageCode, "change_language"))
-	log.Println(update.Message.Text == localization.Localize(user.LanguageCode, "change_language"))
-
 	if update.Message.Text == localization.Localize(user.LanguageCode, "change_language") {
 		languageMsg := tgBotApi.NewMessage(user.ID, localization.Localize(user.LanguageCode, "choose_language"))
 
