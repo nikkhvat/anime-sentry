@@ -22,4 +22,6 @@ func CheckNewEpisodes(ctx context.Context, db repositories.DB) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	s.StartAsync()
 }
