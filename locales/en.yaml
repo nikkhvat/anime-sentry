@@ -48,3 +48,6 @@
 
 - id: "language_successfully_changed"
   translation: "Language successfully changed"
+
+- id: "anime_list"
+  translation: "Anime you are following:"

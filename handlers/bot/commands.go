@@ -4,6 +4,7 @@ import (
 	"anime-sentry/pkg/localization"
 	"context"
 	"fmt"
+	"log"
 	"strings"
 
 	"anime-sentry/models"
@@ -53,6 +54,17 @@ func (h *handler) Command(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 		msg.ReplyMarkup = generalKeyboard
 
 		tgbot.Send(msg)
+	case "language":
+		onChangeLanguage(&user, tgbot)
+	case "list":
+		anime, err := h.user.GetUserAnimeList(ctx, user)
+
+		if err != nil {
+			log.Println(err)
+			return
+		}
+
+		onListAnime(&user, tgbot, anime)
 	}
 }
 
@@ -67,4 +79,25 @@ func generateAnimeSitesMessage(message string) string {
 
 	fullMessage := fmt.Sprintf("%s\n\n%s", message, formattedSites)
 	return fullMessage
+}
+
+func onListAnime(user *models.User, tgbot *tgBotApi.BotAPI, anime []models.Anime) {
+	var (
+		langMessage = localization.Localize(user.LanguageCode, "anime_list")
+	)
+
+	var animeList []string
+	for _, a := range anime {
+		animeList = append(animeList, fmt.Sprintf("- %s", a.Name))
+	}
+
+	messageText := fmt.Sprintf("%s\n%s", langMessage, strings.Join(animeList, "\n"))
+
+	languageMsg := tgBotApi.NewMessage(user.ID, messageText)
+
+	_, err := tgbot.Send(languageMsg)
+
+	if err != nil {
+		log.Println(err)
+	}
 }

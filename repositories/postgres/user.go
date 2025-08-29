@@ -18,6 +18,33 @@ func (p *postgres) AddNewUser(ctx context.Context, user models.User) error {
 	return nil
 }
 
+func (p *postgres) GetUserAnimeList(ctx context.Context, user models.User) ([]models.Anime, error) {
+	var animes []models.Anime
+
+	err := p.db.WithContext(ctx).
+		Preload("Anime").
+		Where("telegram_id = ?", user.ID).
+		Find(&[]models.Subscriber{}).Error
+	if err != nil {
+		return nil, err
+	}
+
+	var subscribers []models.Subscriber
+	result := p.db.WithContext(ctx).
+		Preload("Anime").
+		Where("telegram_id = ?", user.ID).
+		Find(&subscribers)
+	if result.Error != nil {
+		return nil, result.Error
+	}
+
+	for _, subscriber := range subscribers {
+		animes = append(animes, subscriber.Anime)
+	}
+
+	return animes, nil
+}
+
 func (p *postgres) GetUserByID(ctx context.Context, id int64) (*models.User, error) {
 	var user models.User
 

@@ -19,6 +19,10 @@ func (c *call) ChooseLanguage(ctx context.Context, user models.User) error {
 	return c.db.SetUserLanguage(ctx, user)
 }
 
+func (c *call) GetUserAnimeList(ctx context.Context, user models.User) ([]models.Anime, error) {
+	return c.db.GetUserAnimeList(ctx, user)
+}
+
 func (c *call) IsExist(ctx context.Context, id int64) bool {
 	user := models.User{
 		ID: id,

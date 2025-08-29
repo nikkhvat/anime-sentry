@@ -31,6 +31,7 @@ type User interface {
 	IsExist(ctx context.Context, user models.User) bool
 	GetUserLanguage(ctx context.Context, user models.User) (*string, error)
 	SetUserLanguage(ctx context.Context, user models.User) error
+	GetUserAnimeList(ctx context.Context, user models.User) ([]models.Anime, error)
 }
 
 type Message interface {
