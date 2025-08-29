@@ -48,3 +48,6 @@
 
 - id: "language_successfully_changed"
   translation: "Язык успешно изменен"
+
+- id: "anime_list"
+  translation: "Аниме которые вы отслеживаете:"

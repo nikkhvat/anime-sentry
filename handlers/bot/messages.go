@@ -17,6 +17,23 @@ type AnimeService struct {
 	LinkPattern string
 }
 
+func onChangeLanguage(user *models.User, tgbot *tgBotApi.BotAPI) {
+	languageMsg := tgBotApi.NewMessage(user.ID, localization.Localize(user.LanguageCode, "anime_list"))
+
+	button1 := tgBotApi.NewInlineKeyboardButtonData("Русский 🇷🇺", "ru")
+	button2 := tgBotApi.NewInlineKeyboardButtonData("English 🇺🇸", "en")
+
+	row := tgBotApi.NewInlineKeyboardRow(button1, button2)
+	languageKeyboard := tgBotApi.NewInlineKeyboardMarkup(row)
+
+	languageMsg.ReplyMarkup = languageKeyboard
+	_, err := tgbot.Send(languageMsg)
+
+	if err != nil {
+		log.Println(err)
+	}
+}
+
 func (h *handler) Message(ctx context.Context, tgbot *tgBotApi.BotAPI, update tgBotApi.Update) {
 	user := &models.User{
 		ID:        update.Message.From.ID,
@@ -45,22 +62,7 @@ func (h *handler) Message(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 	}
 
 	if update.Message.Text == localization.Localize(user.LanguageCode, "change_language") {
-		languageMsg := tgBotApi.NewMessage(user.ID, localization.Localize(user.LanguageCode, "choose_language"))
-
-		button1 := tgBotApi.NewInlineKeyboardButtonData("Русский 🇷🇺", "ru")
-		button2 := tgBotApi.NewInlineKeyboardButtonData("English 🇺🇸", "en")
-
-		row := tgBotApi.NewInlineKeyboardRow(button1, button2)
-		languageKeyboard := tgBotApi.NewInlineKeyboardMarkup(row)
-
-		languageMsg.ReplyMarkup = languageKeyboard
-		_, err := tgbot.Send(languageMsg)
-
-		if err != nil {
-			log.Println(err)
-		}
-
-		return
+		onChangeLanguage(user, tgbot)
 	}
 
 	result := generateAnimeSitesMessage(localization.Localize(user.LanguageCode, "invalid_link"))
