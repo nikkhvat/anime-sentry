@@ -9,7 +9,7 @@
 
 ## Supported websites
 
-- [animego.org](https://animego.org/)
+- [animego.me](https://animego.me/)
 
 ![prewiew image](./prewiew.jpg)
 

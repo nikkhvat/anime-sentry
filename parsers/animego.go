@@ -35,7 +35,7 @@ func getLastAndNextEpisode(episodes []Episode) (Episode, Episode) {
 }
 
 func getDubbings(episode, id string) ([]string, error) {
-	url := fmt.Sprintf("https://animego.org/anime/series?dubbing=&provider=&episode=%s&id=%s", episode, id)
+	url := fmt.Sprintf("https://animego.me/anime/series?dubbing=&provider=&episode=%s&id=%s", episode, id)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err

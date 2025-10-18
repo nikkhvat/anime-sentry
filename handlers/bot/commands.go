@@ -71,7 +71,7 @@ func (h *handler) Command(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 func generateAnimeSitesMessage(message string) string {
 	var siteLinks []string
 
-	for _, site := range []string{"animego.org"} {
+	for _, site := range []string{"animego.me"} {
 		siteLinks = append(siteLinks, site)
 	}
 
