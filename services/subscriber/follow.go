@@ -28,7 +28,7 @@ func getAnimeDataByUrl(link string) (*parsers.AnimeResponse, error) {
 		return nil, errors.New("link cannot by empty")
 	}
 
-	regexpAnimego, _ := regexp.Compile(`^https://animego.org/anime/.*$`)
+	regexpAnimego, _ := regexp.Compile(`^https://animego.me/anime/.*$`)
 
 	if regexpAnimego.MatchString(link) {
 		return parsers.FetchAnimeGo(link)

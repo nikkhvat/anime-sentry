@@ -36,7 +36,7 @@ func (h *handler) Message(ctx context.Context, tgbot *tgBotApi.BotAPI, update tg
 
 	link := update.Message.Text
 
-	regexpAnimego, _ := regexp.Compile(`^https://animego.org/anime/.*$`)
+	regexpAnimego, _ := regexp.Compile(`^https://animego.me/anime/.*$`)
 
 	if regexpAnimego.MatchString(link) {
 		msg := h.anime.SaveAnime(ctx, update.Message.Text, user.ID)
