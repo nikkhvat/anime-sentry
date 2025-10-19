@@ -13,7 +13,7 @@ start_interactive:
 update:
 	git pull
 	docker-compose stop
-	docker-compose up --build --force-recreate --no-cache -d
+	docker-compose up --build --force-recreate -d
 	docker image prune -f
 
 stop:
