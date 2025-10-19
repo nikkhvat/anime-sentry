@@ -22,6 +22,6 @@ jobs:
 
     - name: Deploy to Server
       run: |
-        ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "cd ~/anime-sentry; git pull; make stop; make start"
+        ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "cd ~/anime-sentry; make update"
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
