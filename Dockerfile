@@ -1,6 +1,6 @@
-FROM golang:1.20
+FROM golang:1.25
 
-RUN apt-get update && apt-get install -y postgresql-client
+RUN apt-get update
 
 WORKDIR /app
 

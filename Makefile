@@ -4,23 +4,20 @@ dev:
 build:
 	go build ./cmd/app.go
 
-test:
-	go test ./services/parser/...
-
 start:
-	docker-compose up --build -d
+	docker-compose up --build --force-recreate --no-cache -d
 
-start_with_out_backgroud:
-	docker-compose up --build
+start_interactive:
+	docker-compose up --build --force-recreate --no-cache
 
-stop_anime_schedule_bot:
-	docker-compose stop anime_schedule_bot
-	docker-compose rm -f anime_schedule_bot
-
-stop_db:
-	docker-compose stop db
-	docker-compose rm -f db
+update:
+	git pull
+	docker-compose stop
+	docker-compose up --build --force-recreate --no-cache -d
+	docker image prune -f
 
 stop:
-	make stop_anime_schedule_bot
-	make stop_db
+	docker-compose stop
+
+remove:
+	docker image prune -f
